@@ -1,26 +1,26 @@
 entity ALU is 
-port( I0,I1:in bit_vector(0 to 15);
+port( I0,I1:in bit_vector(0,15);
 
 		S0,S1:in bit;
 		
-		O:out bit_vector(0 to 15);
+		O:out bit_vector(0,15);
 		C:out bit;
-		Z:out bit
+		Z:out bit;
 		);
 		
 End ALU;
  architecture structural of ALU is
  
 component MY_XOR
-	port( A,B:in bit_vector(0 to 15);
-			O:out bit_vector(0 to 15)
-			);
+	port( I0,I1:in bit_vector(0,15)
+			O:out bit_vector(0,15);
+			Z:out bit);
 end component;
 
---signal TEMP_1,TEMP_2,TEMP_3,TEMP_4,TEMP_5,TEMP_6,TEMP_7:bit;
+signal TEMP_1,TEMP_2,TEMP_3,TEMP_4,TEMP_5,TEMP_6,TEMP_7:bit;
 
 begin
- F1: MY_XOR port map  (A=>A,B=>B,O=>O); 
+ F1: MY_XOR port map  (I0,I1,O,Z); 
 -- F2: MUX port map  (I0=>'1',I1=>'0',S=>D,O=>TEMP_2);
 -- F3: MUX port map  (I0=>TEMP_1,I1=>TEMP_2,S=>C,O=>TEMP_3);
 -- F4: MUX port map  (I0=>TEMP_2,I1=>TEMP_1,S=>C,O=>TEMP_4);

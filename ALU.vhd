@@ -20,7 +20,7 @@ end component;
 --signal TEMP_1,TEMP_2,TEMP_3,TEMP_4,TEMP_5,TEMP_6,TEMP_7:bit;
 
 begin
- F1: MY_XOR port map  (A=>A,B=>B,O=>O); 
+ F1: MY_XOR port map  (A=>I0,B=>I1,O=>O); 
 -- F2: MUX port map  (I0=>'1',I1=>'0',S=>D,O=>TEMP_2);
 -- F3: MUX port map  (I0=>TEMP_1,I1=>TEMP_2,S=>C,O=>TEMP_3);
 -- F4: MUX port map  (I0=>TEMP_2,I1=>TEMP_1,S=>C,O=>TEMP_4);

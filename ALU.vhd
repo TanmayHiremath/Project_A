@@ -19,7 +19,7 @@ component XOR1
 	end component;	
 	
 begin
-U0: XOR1 port map (D0 => D0, D1 => D1, A => A );
+--U0: XOR1 port map (D0 => D0, D1 => D1, A => A );
 --U1: XOR1 port map (A => D0, B => W, C => X);
 --U2: SUM1 port map (A => D1, B => S, C => Z);
 --U3: SUBTRACTOR1 port map (D => X, E => Z, F => Y);

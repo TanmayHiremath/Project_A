@@ -19,6 +19,6 @@ begin
 process1 : for i in 0 to 15 generate
 U0: XOR2 port map (E => D0(i), F => D1(i), G=>A(i) );
 
-end generate process1
-end plan;
+end generate process1;
 
+end plan;

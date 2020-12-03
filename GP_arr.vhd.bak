@@ -19,8 +19,11 @@ component gp_cal
 begin
 
 stage1 : for i in 0 to 15 generate
-U0: gp_cal port map (Ai => I0(i), Bi => I1(i), Gi => G(i), Pi => P(i) );
-end generate stage1;
+U0: g_cal port map (Ai => I0(i), Bi => I1(i), Gi => G(i) );
+end generate stage1
 
+stage2 : for i in 0 to 15 generate 
+P0: p_cal port map (Ai => I0(i), Bi => I1(i), Gi => G(i) );
+end generate stage2
 
 end calc;

@@ -1,9 +1,8 @@
 entity XOR1 is 
 port (
 	D0,D1 : in bit_vector(0 to 15);
-	A      : out bit_vector(0 to 15); --output vector
-	C,Z    : out bit --carry bit and zero bit
-);
+	A      : out bit_vector(0 to 15) --output vector
+	);
 end entity XOR1;
 
 architecture plan of XOR1 is 

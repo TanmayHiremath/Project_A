@@ -1,0 +1,10 @@
+entity twos_complement
+	I0,I1 : in bit_vector(0 to 15);
+	A     : out bit_vector(0 to 15)
+	);
+end entity twos_complement;
+
+architecture calc of twos_complement is 
+
+end calc;
+	

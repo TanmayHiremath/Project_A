@@ -1,6 +1,6 @@
 Analysis & Synthesis report for ALU
-Thu Dec 03 20:47:35 2020
-Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Fri Dec 04 04:05:37 2020
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
 ---------------------
@@ -14,7 +14,19 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Analysis & Synthesis Messages
+  9. Port Connectivity Checks: "NAND1:F4"
+ 10. Port Connectivity Checks: "XOR1:F3"
+ 11. Port Connectivity Checks: "subtractor:F2|KS_ADDER:F2"
+ 12. Port Connectivity Checks: "subtractor:F2|twos_complement:F1|KS_ADDER:F1"
+ 13. Port Connectivity Checks: "subtractor:F2"
+ 14. Port Connectivity Checks: "KS_ADDER:F1|node_op:\stage3:11:U3"
+ 15. Port Connectivity Checks: "KS_ADDER:F1|node_op:\stage3:10:U3"
+ 16. Port Connectivity Checks: "KS_ADDER:F1|node_op:\stage3:9:U3"
+ 17. Port Connectivity Checks: "KS_ADDER:F1|node_op:\stage3:8:U3"
+ 18. Port Connectivity Checks: "KS_ADDER:F1|node_op:\stage2:13:U2"
+ 19. Port Connectivity Checks: "KS_ADDER:F1|node_op:\stage2:12:U2"
+ 20. Port Connectivity Checks: "KS_ADDER:F1"
+ 21. Analysis & Synthesis Messages
 
 
 
@@ -41,12 +53,12 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Thu Dec 03 20:47:35 2020       ;
-; Quartus Prime Version       ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
+; Analysis & Synthesis Status ; Successful - Fri Dec 04 04:05:37 2020       ;
+; Quartus Prime Version       ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name               ; ALU                                         ;
 ; Top-level Entity Name       ; ALU                                         ;
 ; Family                      ; MAX V                                       ;
-; Total logic elements        ; 0                                           ;
+; Total logic elements        ; 10                                          ;
 ; Total pins                  ; 52                                          ;
 ; Total virtual pins          ; 0                                           ;
 ; UFM blocks                  ; 0 / 1 ( 0 % )                               ;
@@ -139,13 +151,23 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                        ;
-+----------------------------------+-----------------+-----------------+------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path ; Library ;
-+----------------------------------+-----------------+-----------------+------------------------------+---------+
-; ALU.vhd                          ; yes             ; User VHDL File  ; D:/Project_A/ALU.vhd         ;         ;
-+----------------------------------+-----------------+-----------------+------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                ;
++----------------------------------+-----------------+-----------------------+------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type             ; File Name with Absolute Path                   ; Library ;
++----------------------------------+-----------------+-----------------------+------------------------------------------------+---------+
+; ALU.vhd                          ; yes             ; User VHDL File        ; S:/VHDL Projects/Project_A/ALU.vhd             ;         ;
+; XOR2.vhd                         ; yes             ; User VHDL File        ; S:/VHDL Projects/Project_A/XOR2.vhd            ;         ;
+; XOR1.vhd                         ; yes             ; User VHDL File        ; S:/VHDL Projects/Project_A/XOR1.vhd            ;         ;
+; gp_cal.vhd                       ; yes             ; User VHDL File        ; S:/VHDL Projects/Project_A/gp_cal.vhd          ;         ;
+; node_op.vhd                      ; yes             ; User VHDL File        ; S:/VHDL Projects/Project_A/node_op.vhd         ;         ;
+; subtractor.vhd                   ; yes             ; User VHDL File        ; S:/VHDL Projects/Project_A/subtractor.vhd      ;         ;
+; twos_complement.vhd              ; yes             ; User VHDL File        ; S:/VHDL Projects/Project_A/twos_complement.vhd ;         ;
+; AND_2.vhd                        ; yes             ; User VHDL File        ; S:/VHDL Projects/Project_A/AND_2.vhd           ;         ;
+; OR_2.vhd                         ; yes             ; User VHDL File        ; S:/VHDL Projects/Project_A/OR_2.vhd            ;         ;
+; NAND1.vhd                        ; yes             ; User VHDL File        ; S:/VHDL Projects/Project_A/NAND1.vhd           ;         ;
+; ks_adder.vhd                     ; yes             ; Auto-Found VHDL File  ; S:/VHDL Projects/Project_A/ks_adder.vhd        ;         ;
++----------------------------------+-----------------+-----------------------+------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -153,20 +175,20 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Total logic elements                        ; 0     ;
-;     -- Combinational with no register       ; 0     ;
+; Total logic elements                        ; 10    ;
+;     -- Combinational with no register       ; 10    ;
 ;     -- Register only                        ; 0     ;
 ;     -- Combinational with a register        ; 0     ;
 ;                                             ;       ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 0     ;
-;     -- 3 input functions                    ; 0     ;
+;     -- 4 input functions                    ; 8     ;
+;     -- 3 input functions                    ; 2     ;
 ;     -- 2 input functions                    ; 0     ;
 ;     -- 1 input functions                    ; 0     ;
 ;     -- 0 input functions                    ; 0     ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 0     ;
+;     -- normal mode                          ; 10    ;
 ;     -- arithmetic mode                      ; 0     ;
 ;     -- qfbk mode                            ; 0     ;
 ;     -- register cascade mode                ; 0     ;
@@ -175,16 +197,30 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;       ;
 ; Total registers                             ; 0     ;
 ; I/O pins                                    ; 52    ;
+; Maximum fan-out node                        ; D1[6] ;
+; Maximum fan-out                             ; 2     ;
+; Total fan-out                               ; 39    ;
+; Average fan-out                             ; 0.63  ;
 +---------------------------------------------+-------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                ;
-+----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name ; Entity Name ; Library Name ;
-+----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+-------------+--------------+
-; |ALU                       ; 0 (0)       ; 0            ; 0          ; 52   ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU                ; ALU         ; work         ;
-+----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+-------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                             ;
++------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+------------------------------------------------+-------------+--------------+
+; Compilation Hierarchy Node   ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                            ; Entity Name ; Library Name ;
++------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+------------------------------------------------+-------------+--------------+
+; |ALU                         ; 10 (0)      ; 0            ; 0          ; 52   ; 0            ; 10 (0)       ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU                                           ; ALU         ; work         ;
+;    |KS_ADDER:F1|             ; 10 (0)      ; 0            ; 0          ; 0    ; 0            ; 10 (0)       ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|KS_ADDER:F1                               ; KS_ADDER    ; work         ;
+;       |node_op:\stage1:0:U1| ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|KS_ADDER:F1|node_op:\stage1:0:U1          ; node_op     ; work         ;
+;          |OR_2:U1|           ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|KS_ADDER:F1|node_op:\stage1:0:U1|OR_2:U1  ; OR_2        ; work         ;
+;       |node_op:\stage1:6:U1| ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|KS_ADDER:F1|node_op:\stage1:6:U1          ; node_op     ; work         ;
+;          |OR_2:U1|           ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|KS_ADDER:F1|node_op:\stage1:6:U1|OR_2:U1  ; OR_2        ; work         ;
+;       |node_op:\stage3:3:U3| ; 3 (0)       ; 0            ; 0          ; 0    ; 0            ; 3 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|KS_ADDER:F1|node_op:\stage3:3:U3          ; node_op     ; work         ;
+;          |OR_2:U1|           ; 3 (3)       ; 0            ; 0          ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|KS_ADDER:F1|node_op:\stage3:3:U3|OR_2:U1  ; OR_2        ; work         ;
+;       |node_op:\stage4:7:U4| ; 5 (0)       ; 0            ; 0          ; 0    ; 0            ; 5 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|KS_ADDER:F1|node_op:\stage4:7:U4          ; node_op     ; work         ;
+;          |AND_2:U0|          ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|KS_ADDER:F1|node_op:\stage4:7:U4|AND_2:U0 ; AND_2       ; work         ;
+;          |OR_2:U1|           ; 3 (3)       ; 0            ; 0          ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|KS_ADDER:F1|node_op:\stage4:7:U4|OR_2:U1  ; OR_2        ; work         ;
++------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+------------------------------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -203,105 +239,229 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "NAND1:F4"                                                                           ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; a    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "XOR1:F3"                                                                            ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; a    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "subtractor:F2|KS_ADDER:F2"                                                           ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; c_in  ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; c_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "subtractor:F2|twos_complement:F1|KS_ADDER:F1"                                            ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; i1[0..14] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; i1[15]    ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; c_in      ; Input  ; Info     ; Stuck at GND                                                                        ;
+; c_out     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "subtractor:F2"                                                                      ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; o    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "KS_ADDER:F1|node_op:\stage3:11:U3"                                                  ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; gi   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; pi   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "KS_ADDER:F1|node_op:\stage3:10:U3"                                                  ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; gi   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; pi   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "KS_ADDER:F1|node_op:\stage3:9:U3"                                                   ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; gi   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; pi   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "KS_ADDER:F1|node_op:\stage3:8:U3"                                                   ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; gi   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; pi   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "KS_ADDER:F1|node_op:\stage2:13:U2"                                                  ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; gi   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; pi   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "KS_ADDER:F1|node_op:\stage2:12:U2"                                                  ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; gi   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; pi   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "KS_ADDER:F1"                                                                        ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; c_in ; Input  ; Info     ; Stuck at GND                                                                        ;
+; a    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Thu Dec 03 20:47:26 2020
+    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+    Info: Processing started: Fri Dec 04 04:05:28 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ALU -c ALU
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file alu.vhd
-    Info (12022): Found design unit 1: ALU-structure File: D:/Project_A/ALU.vhd Line: 12
-    Info (12023): Found entity 1: ALU File: D:/Project_A/ALU.vhd Line: 2
+    Info (12022): Found design unit 1: ALU-structure File: S:/VHDL Projects/Project_A/ALU.vhd Line: 12
+    Info (12023): Found entity 1: ALU File: S:/VHDL Projects/Project_A/ALU.vhd Line: 2
 Warning (12019): Can't analyze file -- file MY_XOR.vhd is missing
 Info (12021): Found 2 design units, including 1 entities, in source file xor2.vhd
-    Info (12022): Found design unit 1: XOR2-struct File: D:/Project_A/XOR2.vhd Line: 9
-    Info (12023): Found entity 1: XOR2 File: D:/Project_A/XOR2.vhd Line: 1
+    Info (12022): Found design unit 1: XOR2-struct File: S:/VHDL Projects/Project_A/XOR2.vhd Line: 9
+    Info (12023): Found entity 1: XOR2 File: S:/VHDL Projects/Project_A/XOR2.vhd Line: 1
 Info (12021): Found 2 design units, including 1 entities, in source file xor1.vhd
-    Info (12022): Found design unit 1: XOR1-plan File: D:/Project_A/XOR1.vhd Line: 9
-    Info (12023): Found entity 1: XOR1 File: D:/Project_A/XOR1.vhd Line: 1
+    Info (12022): Found design unit 1: XOR1-plan File: S:/VHDL Projects/Project_A/XOR1.vhd Line: 8
+    Info (12023): Found entity 1: XOR1 File: S:/VHDL Projects/Project_A/XOR1.vhd Line: 1
 Info (12021): Found 2 design units, including 1 entities, in source file gp_cal.vhd
-    Info (12022): Found design unit 1: gp_cal-struct File: D:/Project_A/gp_cal.vhd Line: 8
-    Info (12023): Found entity 1: gp_cal File: D:/Project_A/gp_cal.vhd Line: 1
-Info (12021): Found 2 design units, including 1 entities, in source file gp_arr.vhd
-    Info (12022): Found design unit 1: GP_arr-calc File: D:/Project_A/GP_arr.vhd Line: 10
-    Info (12023): Found entity 1: GP_arr File: D:/Project_A/GP_arr.vhd Line: 1
-Warning (12018): Entity "OR2" will be ignored because it conflicts with Quartus Prime primitive name File: D:/Project_A/OR2.vhd Line: 1
-Info (12021): Found 2 design units, including 1 entities, in source file or2.vhd
-    Info (12022): Found design unit 1: OR2-struct File: D:/Project_A/OR2.vhd Line: 9
-Warning (12018): Entity "AND2" will be ignored because it conflicts with Quartus Prime primitive name File: D:/Project_A/AND2.vhd Line: 1
-Info (12021): Found 2 design units, including 1 entities, in source file and2.vhd
-    Info (12022): Found design unit 1: AND2-struct File: D:/Project_A/AND2.vhd Line: 9
+    Info (12022): Found design unit 1: gp_cal-struct File: S:/VHDL Projects/Project_A/gp_cal.vhd Line: 8
+    Info (12023): Found entity 1: gp_cal File: S:/VHDL Projects/Project_A/gp_cal.vhd Line: 1
+Warning (12019): Can't analyze file -- file GP_arr.vhd is missing
+Warning (12019): Can't analyze file -- file OR2.vhd is missing
+Warning (12019): Can't analyze file -- file AND2.vhd is missing
 Info (12021): Found 2 design units, including 1 entities, in source file node_op.vhd
-    Info (12022): Found design unit 1: node_op-struct File: D:/Project_A/node_op.vhd Line: 8
-    Info (12023): Found entity 1: node_op File: D:/Project_A/node_op.vhd Line: 1
+    Info (12022): Found design unit 1: node_op-struct File: S:/VHDL Projects/Project_A/node_op.vhd Line: 8
+    Info (12023): Found entity 1: node_op File: S:/VHDL Projects/Project_A/node_op.vhd Line: 1
+Info (12021): Found 2 design units, including 1 entities, in source file subtractor.vhd
+    Info (12022): Found design unit 1: subtractor-calc File: S:/VHDL Projects/Project_A/subtractor.vhd Line: 8
+    Info (12023): Found entity 1: subtractor File: S:/VHDL Projects/Project_A/subtractor.vhd Line: 1
+Info (12021): Found 2 design units, including 1 entities, in source file twos_complement.vhd
+    Info (12022): Found design unit 1: twos_complement-calc File: S:/VHDL Projects/Project_A/twos_complement.vhd Line: 8
+    Info (12023): Found entity 1: twos_complement File: S:/VHDL Projects/Project_A/twos_complement.vhd Line: 1
+Info (12021): Found 2 design units, including 1 entities, in source file and_2.vhd
+    Info (12022): Found design unit 1: AND_2-struct File: S:/VHDL Projects/Project_A/AND_2.vhd Line: 9
+    Info (12023): Found entity 1: AND_2 File: S:/VHDL Projects/Project_A/AND_2.vhd Line: 1
+Info (12021): Found 2 design units, including 1 entities, in source file or_2.vhd
+    Info (12022): Found design unit 1: OR_2-struct File: S:/VHDL Projects/Project_A/OR_2.vhd Line: 9
+    Info (12023): Found entity 1: OR_2 File: S:/VHDL Projects/Project_A/OR_2.vhd Line: 1
+Info (12021): Found 2 design units, including 1 entities, in source file nand1.vhd
+    Info (12022): Found design unit 1: NAND1-plan File: S:/VHDL Projects/Project_A/NAND1.vhd Line: 8
+    Info (12023): Found entity 1: NAND1 File: S:/VHDL Projects/Project_A/NAND1.vhd Line: 1
 Info (12127): Elaborating entity "ALU" for the top level hierarchy
-Warning (10541): VHDL Signal Declaration warning at ALU.vhd(7): used implicit default value for signal "A" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/Project_A/ALU.vhd Line: 7
-Warning (10541): VHDL Signal Declaration warning at ALU.vhd(8): used implicit default value for signal "C" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/Project_A/ALU.vhd Line: 8
-Warning (10541): VHDL Signal Declaration warning at ALU.vhd(8): used implicit default value for signal "Z" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/Project_A/ALU.vhd Line: 8
+Warning (10541): VHDL Signal Declaration warning at ALU.vhd(7): used implicit default value for signal "A" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: S:/VHDL Projects/Project_A/ALU.vhd Line: 7
+Warning (10541): VHDL Signal Declaration warning at ALU.vhd(8): used implicit default value for signal "Z" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: S:/VHDL Projects/Project_A/ALU.vhd Line: 8
+Warning (10036): Verilog HDL or VHDL warning at ALU.vhd(41): object "temp1" assigned a value but never read File: S:/VHDL Projects/Project_A/ALU.vhd Line: 41
+Warning (10036): Verilog HDL or VHDL warning at ALU.vhd(41): object "temp2" assigned a value but never read File: S:/VHDL Projects/Project_A/ALU.vhd Line: 41
+Warning (10036): Verilog HDL or VHDL warning at ALU.vhd(41): object "temp3" assigned a value but never read File: S:/VHDL Projects/Project_A/ALU.vhd Line: 41
+Warning (10036): Verilog HDL or VHDL warning at ALU.vhd(41): object "temp4" assigned a value but never read File: S:/VHDL Projects/Project_A/ALU.vhd Line: 41
+Warning (12125): Using design file ks_adder.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: KS_ADDER-calc File: S:/VHDL Projects/Project_A/ks_adder.vhd Line: 9
+    Info (12023): Found entity 1: KS_ADDER File: S:/VHDL Projects/Project_A/ks_adder.vhd Line: 1
+Info (12128): Elaborating entity "KS_ADDER" for hierarchy "KS_ADDER:F1" File: S:/VHDL Projects/Project_A/ALU.vhd Line: 44
+Info (12128): Elaborating entity "gp_cal" for hierarchy "KS_ADDER:F1|gp_cal:\pre_processing:0:pre" File: S:/VHDL Projects/Project_A/ks_adder.vhd Line: 33
+Info (12128): Elaborating entity "node_op" for hierarchy "KS_ADDER:F1|node_op:\stage1:0:U1" File: S:/VHDL Projects/Project_A/ks_adder.vhd Line: 44
+Info (12128): Elaborating entity "AND_2" for hierarchy "KS_ADDER:F1|node_op:\stage1:0:U1|AND_2:U0" File: S:/VHDL Projects/Project_A/node_op.vhd Line: 26
+Info (12128): Elaborating entity "OR_2" for hierarchy "KS_ADDER:F1|node_op:\stage1:0:U1|OR_2:U1" File: S:/VHDL Projects/Project_A/node_op.vhd Line: 27
+Info (12128): Elaborating entity "subtractor" for hierarchy "subtractor:F2" File: S:/VHDL Projects/Project_A/ALU.vhd Line: 45
+Info (12128): Elaborating entity "twos_complement" for hierarchy "subtractor:F2|twos_complement:F1" File: S:/VHDL Projects/Project_A/subtractor.vhd Line: 27
+Info (12128): Elaborating entity "XOR1" for hierarchy "XOR1:F3" File: S:/VHDL Projects/Project_A/ALU.vhd Line: 46
+Info (12128): Elaborating entity "XOR2" for hierarchy "XOR1:F3|XOR2:\process1:0:U0" File: S:/VHDL Projects/Project_A/XOR1.vhd Line: 19
+Info (12128): Elaborating entity "NAND1" for hierarchy "NAND1:F4" File: S:/VHDL Projects/Project_A/ALU.vhd Line: 47
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "A[15]" is stuck at GND File: D:/Project_A/ALU.vhd Line: 7
-    Warning (13410): Pin "A[14]" is stuck at GND File: D:/Project_A/ALU.vhd Line: 7
-    Warning (13410): Pin "A[13]" is stuck at GND File: D:/Project_A/ALU.vhd Line: 7
-    Warning (13410): Pin "A[12]" is stuck at GND File: D:/Project_A/ALU.vhd Line: 7
-    Warning (13410): Pin "A[11]" is stuck at GND File: D:/Project_A/ALU.vhd Line: 7
-    Warning (13410): Pin "A[10]" is stuck at GND File: D:/Project_A/ALU.vhd Line: 7
-    Warning (13410): Pin "A[9]" is stuck at GND File: D:/Project_A/ALU.vhd Line: 7
-    Warning (13410): Pin "A[8]" is stuck at GND File: D:/Project_A/ALU.vhd Line: 7
-    Warning (13410): Pin "A[7]" is stuck at GND File: D:/Project_A/ALU.vhd Line: 7
-    Warning (13410): Pin "A[6]" is stuck at GND File: D:/Project_A/ALU.vhd Line: 7
-    Warning (13410): Pin "A[5]" is stuck at GND File: D:/Project_A/ALU.vhd Line: 7
-    Warning (13410): Pin "A[4]" is stuck at GND File: D:/Project_A/ALU.vhd Line: 7
-    Warning (13410): Pin "A[3]" is stuck at GND File: D:/Project_A/ALU.vhd Line: 7
-    Warning (13410): Pin "A[2]" is stuck at GND File: D:/Project_A/ALU.vhd Line: 7
-    Warning (13410): Pin "A[1]" is stuck at GND File: D:/Project_A/ALU.vhd Line: 7
-    Warning (13410): Pin "A[0]" is stuck at GND File: D:/Project_A/ALU.vhd Line: 7
-    Warning (13410): Pin "C" is stuck at GND File: D:/Project_A/ALU.vhd Line: 8
-    Warning (13410): Pin "Z" is stuck at GND File: D:/Project_A/ALU.vhd Line: 8
-Warning (21074): Design contains 34 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "D0[15]" File: D:/Project_A/ALU.vhd Line: 4
-    Warning (15610): No output dependent on input pin "D0[14]" File: D:/Project_A/ALU.vhd Line: 4
-    Warning (15610): No output dependent on input pin "D0[13]" File: D:/Project_A/ALU.vhd Line: 4
-    Warning (15610): No output dependent on input pin "D0[12]" File: D:/Project_A/ALU.vhd Line: 4
-    Warning (15610): No output dependent on input pin "D0[11]" File: D:/Project_A/ALU.vhd Line: 4
-    Warning (15610): No output dependent on input pin "D0[10]" File: D:/Project_A/ALU.vhd Line: 4
-    Warning (15610): No output dependent on input pin "D0[9]" File: D:/Project_A/ALU.vhd Line: 4
-    Warning (15610): No output dependent on input pin "D0[8]" File: D:/Project_A/ALU.vhd Line: 4
-    Warning (15610): No output dependent on input pin "D0[7]" File: D:/Project_A/ALU.vhd Line: 4
-    Warning (15610): No output dependent on input pin "D0[6]" File: D:/Project_A/ALU.vhd Line: 4
-    Warning (15610): No output dependent on input pin "D0[5]" File: D:/Project_A/ALU.vhd Line: 4
-    Warning (15610): No output dependent on input pin "D0[4]" File: D:/Project_A/ALU.vhd Line: 4
-    Warning (15610): No output dependent on input pin "D0[3]" File: D:/Project_A/ALU.vhd Line: 4
-    Warning (15610): No output dependent on input pin "D0[2]" File: D:/Project_A/ALU.vhd Line: 4
-    Warning (15610): No output dependent on input pin "D0[1]" File: D:/Project_A/ALU.vhd Line: 4
-    Warning (15610): No output dependent on input pin "D0[0]" File: D:/Project_A/ALU.vhd Line: 4
-    Warning (15610): No output dependent on input pin "D1[15]" File: D:/Project_A/ALU.vhd Line: 4
-    Warning (15610): No output dependent on input pin "D1[14]" File: D:/Project_A/ALU.vhd Line: 4
-    Warning (15610): No output dependent on input pin "D1[13]" File: D:/Project_A/ALU.vhd Line: 4
-    Warning (15610): No output dependent on input pin "D1[12]" File: D:/Project_A/ALU.vhd Line: 4
-    Warning (15610): No output dependent on input pin "D1[11]" File: D:/Project_A/ALU.vhd Line: 4
-    Warning (15610): No output dependent on input pin "D1[10]" File: D:/Project_A/ALU.vhd Line: 4
-    Warning (15610): No output dependent on input pin "D1[9]" File: D:/Project_A/ALU.vhd Line: 4
-    Warning (15610): No output dependent on input pin "D1[8]" File: D:/Project_A/ALU.vhd Line: 4
-    Warning (15610): No output dependent on input pin "D1[7]" File: D:/Project_A/ALU.vhd Line: 4
-    Warning (15610): No output dependent on input pin "D1[6]" File: D:/Project_A/ALU.vhd Line: 4
-    Warning (15610): No output dependent on input pin "D1[5]" File: D:/Project_A/ALU.vhd Line: 4
-    Warning (15610): No output dependent on input pin "D1[4]" File: D:/Project_A/ALU.vhd Line: 4
-    Warning (15610): No output dependent on input pin "D1[3]" File: D:/Project_A/ALU.vhd Line: 4
-    Warning (15610): No output dependent on input pin "D1[2]" File: D:/Project_A/ALU.vhd Line: 4
-    Warning (15610): No output dependent on input pin "D1[1]" File: D:/Project_A/ALU.vhd Line: 4
-    Warning (15610): No output dependent on input pin "D1[0]" File: D:/Project_A/ALU.vhd Line: 4
-    Warning (15610): No output dependent on input pin "S0" File: D:/Project_A/ALU.vhd Line: 6
-    Warning (15610): No output dependent on input pin "S1" File: D:/Project_A/ALU.vhd Line: 6
-Info (21057): Implemented 52 device resources after synthesis - the final resource count might be different
+    Warning (13410): Pin "A[15]" is stuck at GND File: S:/VHDL Projects/Project_A/ALU.vhd Line: 7
+    Warning (13410): Pin "A[14]" is stuck at GND File: S:/VHDL Projects/Project_A/ALU.vhd Line: 7
+    Warning (13410): Pin "A[13]" is stuck at GND File: S:/VHDL Projects/Project_A/ALU.vhd Line: 7
+    Warning (13410): Pin "A[12]" is stuck at GND File: S:/VHDL Projects/Project_A/ALU.vhd Line: 7
+    Warning (13410): Pin "A[11]" is stuck at GND File: S:/VHDL Projects/Project_A/ALU.vhd Line: 7
+    Warning (13410): Pin "A[10]" is stuck at GND File: S:/VHDL Projects/Project_A/ALU.vhd Line: 7
+    Warning (13410): Pin "A[9]" is stuck at GND File: S:/VHDL Projects/Project_A/ALU.vhd Line: 7
+    Warning (13410): Pin "A[8]" is stuck at GND File: S:/VHDL Projects/Project_A/ALU.vhd Line: 7
+    Warning (13410): Pin "A[7]" is stuck at GND File: S:/VHDL Projects/Project_A/ALU.vhd Line: 7
+    Warning (13410): Pin "A[6]" is stuck at GND File: S:/VHDL Projects/Project_A/ALU.vhd Line: 7
+    Warning (13410): Pin "A[5]" is stuck at GND File: S:/VHDL Projects/Project_A/ALU.vhd Line: 7
+    Warning (13410): Pin "A[4]" is stuck at GND File: S:/VHDL Projects/Project_A/ALU.vhd Line: 7
+    Warning (13410): Pin "A[3]" is stuck at GND File: S:/VHDL Projects/Project_A/ALU.vhd Line: 7
+    Warning (13410): Pin "A[2]" is stuck at GND File: S:/VHDL Projects/Project_A/ALU.vhd Line: 7
+    Warning (13410): Pin "A[1]" is stuck at GND File: S:/VHDL Projects/Project_A/ALU.vhd Line: 7
+    Warning (13410): Pin "A[0]" is stuck at GND File: S:/VHDL Projects/Project_A/ALU.vhd Line: 7
+    Warning (13410): Pin "Z" is stuck at GND File: S:/VHDL Projects/Project_A/ALU.vhd Line: 8
+Warning (21074): Design contains 14 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "D0[15]" File: S:/VHDL Projects/Project_A/ALU.vhd Line: 4
+    Warning (15610): No output dependent on input pin "D0[14]" File: S:/VHDL Projects/Project_A/ALU.vhd Line: 4
+    Warning (15610): No output dependent on input pin "D0[13]" File: S:/VHDL Projects/Project_A/ALU.vhd Line: 4
+    Warning (15610): No output dependent on input pin "D0[12]" File: S:/VHDL Projects/Project_A/ALU.vhd Line: 4
+    Warning (15610): No output dependent on input pin "D0[11]" File: S:/VHDL Projects/Project_A/ALU.vhd Line: 4
+    Warning (15610): No output dependent on input pin "D0[10]" File: S:/VHDL Projects/Project_A/ALU.vhd Line: 4
+    Warning (15610): No output dependent on input pin "D1[15]" File: S:/VHDL Projects/Project_A/ALU.vhd Line: 4
+    Warning (15610): No output dependent on input pin "D1[14]" File: S:/VHDL Projects/Project_A/ALU.vhd Line: 4
+    Warning (15610): No output dependent on input pin "D1[13]" File: S:/VHDL Projects/Project_A/ALU.vhd Line: 4
+    Warning (15610): No output dependent on input pin "D1[12]" File: S:/VHDL Projects/Project_A/ALU.vhd Line: 4
+    Warning (15610): No output dependent on input pin "D1[11]" File: S:/VHDL Projects/Project_A/ALU.vhd Line: 4
+    Warning (15610): No output dependent on input pin "D1[10]" File: S:/VHDL Projects/Project_A/ALU.vhd Line: 4
+    Warning (15610): No output dependent on input pin "S0" File: S:/VHDL Projects/Project_A/ALU.vhd Line: 6
+    Warning (15610): No output dependent on input pin "S1" File: S:/VHDL Projects/Project_A/ALU.vhd Line: 6
+Info (21057): Implemented 62 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 34 input pins
     Info (21059): Implemented 18 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 61 warnings
-    Info: Peak virtual memory: 4768 megabytes
-    Info: Processing ended: Thu Dec 03 20:47:35 2020
+    Info (21061): Implemented 10 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 45 warnings
+    Info: Peak virtual memory: 4764 megabytes
+    Info: Processing ended: Fri Dec 04 04:05:37 2020
     Info: Elapsed time: 00:00:09
     Info: Total CPU time (on all processors): 00:00:20
 

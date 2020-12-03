@@ -1,0 +1,36 @@
+entity XOR1 is 
+port (
+	D0,D1 : in bit_vector(0 to 15);
+	A      : out bit_vector(0 to 15); --output vector
+	C,Z    : out bit --carry bit and zero bit
+);
+end entity XOR1;
+
+architecture plan of XOR1 is 
+
+component XOR2
+	port (
+		E,F : in bit;
+		G   : out bit
+	);
+	end component;
+begin 
+
+U0: XOR2 port map (E => D0(0), F => D1(0), G=>A(0) );
+U1: XOR2 port map (E => D0(1), F => D1(1), G=>A(1) );
+U2: XOR2 port map (E => D0(2), F => D1(2), G=>A(2) );
+U3: XOR2 port map (E => D0(3), F => D1(3), G=>A(3) );
+U4: XOR2 port map (E => D0(4), F => D1(4), G=>A(4) );
+U5: XOR2 port map (E => D0(5), F => D1(5), G=>A(5) );
+U6: XOR2 port map (E => D0(6), F => D1(6), G=>A(6) );
+U7: XOR2 port map (E => D0(7), F => D1(7), G=>A(7) );
+U8: XOR2 port map (E => D0(8), F => D1(8), G=>A(8) );
+U9: XOR2 port map (E => D0(9), F => D1(9), G=>A(9) );
+U10: XOR2 port map (E => D0(10), F => D1(10), G=>A(10) );
+U11: XOR2 port map (E => D0(11), F => D1(11), G=>A(11) );
+U12: XOR2 port map (E => D0(12), F => D1(12), G=>A(12) );
+U13: XOR2 port map (E => D0(13), F => D1(13), G=>A(13) );
+U14: XOR2 port map (E => D0(14), F => D1(14), G=>A(14) );
+U15: XOR2 port map (E => D0(15), F => D1(15), G=>A(15) );		
+end plan;
+

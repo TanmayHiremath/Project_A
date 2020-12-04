@@ -40,8 +40,9 @@ port(
 end component;
 
 signal temp1,temp2,temp3,temp4:bit_vector(0 to 15);
-signal var1,var2,var3,var4 : bit ;
+signal var1,var2,var3,var4: bit ;
 signal out_temp : bit_vector(0 to 15);
+signal random1,random2 : bit;
 		
 begin
 F1:	KS_ADDER port map(I0=>D0,I1=>D1,C_in=>'0',A=>temp1,C_out=>C);
@@ -49,15 +50,21 @@ F2: subtractor port map(I0=>D0,I1=>D1,O=>temp2);
 F3: XOR1 port map(D0=>D0,D1=>D1,A=>temp3);
 F4: NAND1 port map(D0=>D0,D1=>D1,A=>temp4);
 
-var1 <= (not S1) AND (not S0)
-var2 <= (not S1) AND (S0)
-var3 <= (S1) AND (not S0)
-var4 <= (S1) AND (S0)
+var1 <= (not S1) AND (not S0);
+var2 <= (not S1) AND (S0);
+var3 <= (S1) AND (not S0);
+var4 <= (S1) AND (S0);
 
 expression : for i in 0 to 15 generate
-	out_temp(i) <= (var1 and temp1(i)) OR (var2 and temp2(i)) OR (var3 and temp3(i)) OR (var4 and temp4(i))
+	out_temp(i) <= (var1 and temp1(i)) OR (var2 and temp2(i)) OR (var3 and temp3(i)) OR (var4 and temp4(i));
 end generate expression;
 
-A <= out_temp
+A <= out_temp;
+
+random2 <= out_temp(0) OR out_temp(1) OR out_temp(2) OR out_temp(3) OR out_temp(4) OR out_temp(5) OR out_temp(6)
+			  OR out_temp(7) OR out_temp(8) OR out_temp(9) OR out_temp(10) OR out_temp(11) OR out_temp(12)
+			  OR out_temp(13) OR out_temp(14) OR out_temp(15);
+
+Z <= not random2;
 
 end structure;

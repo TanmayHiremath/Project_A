@@ -1,6 +1,6 @@
 Analysis & Synthesis report for ALU
-Fri Dec  4 21:29:33 2020
-Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Sat Dec 05 03:57:16 2020
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
 ---------------------
@@ -15,7 +15,7 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
   9. Port Connectivity Checks: "subtractor:F2|KS_ADDER:F2"
- 10. Port Connectivity Checks: "subtractor:F2|twos_complement:F1|KS_ADDER:F1"
+ 10. Port Connectivity Checks: "subtractor:F2|twos_complement:F1|KS_ADDER:F2"
  11. Port Connectivity Checks: "KS_ADDER:F1"
  12. Analysis & Synthesis Messages
 
@@ -44,8 +44,8 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Fri Dec  4 21:29:33 2020       ;
-; Quartus Prime Version       ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
+; Analysis & Synthesis Status ; Successful - Sat Dec 05 03:57:16 2020       ;
+; Quartus Prime Version       ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name               ; ALU                                         ;
 ; Top-level Entity Name       ; ALU                                         ;
 ; Family                      ; MAX V                                       ;
@@ -142,23 +142,24 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                             ;
-+----------------------------------+-----------------+-----------------------+---------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type             ; File Name with Absolute Path                ; Library ;
-+----------------------------------+-----------------+-----------------------+---------------------------------------------+---------+
-; ALU.vhd                          ; yes             ; User VHDL File        ; /home/captain/Project_A/ALU.vhd             ;         ;
-; XOR2.vhd                         ; yes             ; User VHDL File        ; /home/captain/Project_A/XOR2.vhd            ;         ;
-; XOR1.vhd                         ; yes             ; User VHDL File        ; /home/captain/Project_A/XOR1.vhd            ;         ;
-; gp_cal.vhd                       ; yes             ; User VHDL File        ; /home/captain/Project_A/gp_cal.vhd          ;         ;
-; node_op.vhd                      ; yes             ; User VHDL File        ; /home/captain/Project_A/node_op.vhd         ;         ;
-; KS_ADDER.vhd                     ; yes             ; User VHDL File        ; /home/captain/Project_A/KS_ADDER.vhd        ;         ;
-; AND_2.vhd                        ; yes             ; Auto-Found VHDL File  ; /home/captain/Project_A/AND_2.vhd           ;         ;
-; OR_2.vhd                         ; yes             ; Auto-Found VHDL File  ; /home/captain/Project_A/OR_2.vhd            ;         ;
-; subtractor.vhd                   ; yes             ; Auto-Found VHDL File  ; /home/captain/Project_A/subtractor.vhd      ;         ;
-; twos_complement.vhd              ; yes             ; Auto-Found VHDL File  ; /home/captain/Project_A/twos_complement.vhd ;         ;
-; NAND1.vhd                        ; yes             ; Auto-Found VHDL File  ; /home/captain/Project_A/NAND1.vhd           ;         ;
-+----------------------------------+-----------------+-----------------------+---------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                ;
++----------------------------------+-----------------+-----------------------+------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type             ; File Name with Absolute Path                   ; Library ;
++----------------------------------+-----------------+-----------------------+------------------------------------------------+---------+
+; ALU.vhd                          ; yes             ; User VHDL File        ; S:/VHDL Projects/Project_A/ALU.vhd             ;         ;
+; XOR2.vhd                         ; yes             ; User VHDL File        ; S:/VHDL Projects/Project_A/XOR2.vhd            ;         ;
+; XOR1.vhd                         ; yes             ; User VHDL File        ; S:/VHDL Projects/Project_A/XOR1.vhd            ;         ;
+; gp_cal.vhd                       ; yes             ; User VHDL File        ; S:/VHDL Projects/Project_A/gp_cal.vhd          ;         ;
+; node_op.vhd                      ; yes             ; User VHDL File        ; S:/VHDL Projects/Project_A/node_op.vhd         ;         ;
+; KS_ADDER.vhd                     ; yes             ; User VHDL File        ; S:/VHDL Projects/Project_A/KS_ADDER.vhd        ;         ;
+; ones_complement.vhd              ; yes             ; User VHDL File        ; S:/VHDL Projects/Project_A/ones_complement.vhd ;         ;
+; and_2.vhd                        ; yes             ; Auto-Found VHDL File  ; S:/VHDL Projects/Project_A/and_2.vhd           ;         ;
+; or_2.vhd                         ; yes             ; Auto-Found VHDL File  ; S:/VHDL Projects/Project_A/or_2.vhd            ;         ;
+; subtractor.vhd                   ; yes             ; Auto-Found VHDL File  ; S:/VHDL Projects/Project_A/subtractor.vhd      ;         ;
+; twos_complement.vhd              ; yes             ; Auto-Found VHDL File  ; S:/VHDL Projects/Project_A/twos_complement.vhd ;         ;
+; nand1.vhd                        ; yes             ; Auto-Found VHDL File  ; S:/VHDL Projects/Project_A/nand1.vhd           ;         ;
++----------------------------------+-----------------+-----------------------+------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -392,34 +393,34 @@ https://fpgasoftware.intel.com/eula.
 ;          |node_op:\stage4:7:U4|          ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage4:7:U4                              ; node_op         ; work         ;
 ;             |AND_2:U2|                   ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage4:7:U4|AND_2:U2                     ; AND_2           ; work         ;
 ;       |twos_complement:F1|               ; 35 (0)      ; 0            ; 0          ; 0    ; 0            ; 35 (0)       ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|twos_complement:F1                                            ; twos_complement ; work         ;
-;          |KS_ADDER:F1|                   ; 35 (16)     ; 0            ; 0          ; 0    ; 0            ; 35 (16)      ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1                                ; KS_ADDER        ; work         ;
-;             |node_op:\stage2:1:U2|       ; 3 (0)       ; 0            ; 0          ; 0    ; 0            ; 3 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage2:1:U2           ; node_op         ; work         ;
-;                |AND_2:U0|                ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage2:1:U2|AND_2:U0  ; AND_2           ; work         ;
-;                |AND_2:U2|                ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage2:1:U2|AND_2:U2  ; AND_2           ; work         ;
-;             |node_op:\stage3:0:U3|       ; 2 (0)       ; 0            ; 0          ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage3:0:U3           ; node_op         ; work         ;
-;                |AND_2:U2|                ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage3:0:U3|AND_2:U2  ; AND_2           ; work         ;
-;             |node_op:\stage3:10:U3|      ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage3:10:U3          ; node_op         ; work         ;
-;                |AND_2:U2|                ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage3:10:U3|AND_2:U2 ; AND_2           ; work         ;
-;             |node_op:\stage3:1:U3|       ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage3:1:U3           ; node_op         ; work         ;
-;                |AND_2:U0|                ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage3:1:U3|AND_2:U0  ; AND_2           ; work         ;
-;             |node_op:\stage3:2:U3|       ; 2 (0)       ; 0            ; 0          ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage3:2:U3           ; node_op         ; work         ;
-;                |AND_2:U2|                ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage3:2:U3|AND_2:U2  ; AND_2           ; work         ;
-;             |node_op:\stage3:3:U3|       ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage3:3:U3           ; node_op         ; work         ;
-;                |AND_2:U2|                ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage3:3:U3|AND_2:U2  ; AND_2           ; work         ;
-;             |node_op:\stage3:4:U3|       ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage3:4:U3           ; node_op         ; work         ;
-;                |AND_2:U2|                ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage3:4:U3|AND_2:U2  ; AND_2           ; work         ;
-;             |node_op:\stage3:5:U3|       ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage3:5:U3           ; node_op         ; work         ;
-;                |AND_2:U2|                ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage3:5:U3|AND_2:U2  ; AND_2           ; work         ;
-;             |node_op:\stage3:6:U3|       ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage3:6:U3           ; node_op         ; work         ;
-;                |AND_2:U2|                ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage3:6:U3|AND_2:U2  ; AND_2           ; work         ;
-;             |node_op:\stage3:7:U3|       ; 2 (0)       ; 0            ; 0          ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage3:7:U3           ; node_op         ; work         ;
-;                |AND_2:U2|                ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage3:7:U3|AND_2:U2  ; AND_2           ; work         ;
-;             |node_op:\stage3:8:U3|       ; 2 (0)       ; 0            ; 0          ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage3:8:U3           ; node_op         ; work         ;
-;                |AND_2:U2|                ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage3:8:U3|AND_2:U2  ; AND_2           ; work         ;
-;             |node_op:\stage3:9:U3|       ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage3:9:U3           ; node_op         ; work         ;
-;                |AND_2:U2|                ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage3:9:U3|AND_2:U2  ; AND_2           ; work         ;
-;             |node_op:\stage4:7:U4|       ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage4:7:U4           ; node_op         ; work         ;
-;                |AND_2:U2|                ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage4:7:U4|AND_2:U2  ; AND_2           ; work         ;
+;          |KS_ADDER:F2|                   ; 35 (16)     ; 0            ; 0          ; 0    ; 0            ; 35 (16)      ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2                                ; KS_ADDER        ; work         ;
+;             |node_op:\stage2:1:U2|       ; 3 (0)       ; 0            ; 0          ; 0    ; 0            ; 3 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage2:1:U2           ; node_op         ; work         ;
+;                |AND_2:U0|                ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage2:1:U2|AND_2:U0  ; AND_2           ; work         ;
+;                |AND_2:U2|                ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage2:1:U2|AND_2:U2  ; AND_2           ; work         ;
+;             |node_op:\stage3:0:U3|       ; 2 (0)       ; 0            ; 0          ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage3:0:U3           ; node_op         ; work         ;
+;                |AND_2:U2|                ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage3:0:U3|AND_2:U2  ; AND_2           ; work         ;
+;             |node_op:\stage3:10:U3|      ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage3:10:U3          ; node_op         ; work         ;
+;                |AND_2:U2|                ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage3:10:U3|AND_2:U2 ; AND_2           ; work         ;
+;             |node_op:\stage3:1:U3|       ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage3:1:U3           ; node_op         ; work         ;
+;                |AND_2:U0|                ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage3:1:U3|AND_2:U0  ; AND_2           ; work         ;
+;             |node_op:\stage3:2:U3|       ; 2 (0)       ; 0            ; 0          ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage3:2:U3           ; node_op         ; work         ;
+;                |AND_2:U2|                ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage3:2:U3|AND_2:U2  ; AND_2           ; work         ;
+;             |node_op:\stage3:3:U3|       ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage3:3:U3           ; node_op         ; work         ;
+;                |AND_2:U2|                ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage3:3:U3|AND_2:U2  ; AND_2           ; work         ;
+;             |node_op:\stage3:4:U3|       ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage3:4:U3           ; node_op         ; work         ;
+;                |AND_2:U2|                ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage3:4:U3|AND_2:U2  ; AND_2           ; work         ;
+;             |node_op:\stage3:5:U3|       ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage3:5:U3           ; node_op         ; work         ;
+;                |AND_2:U2|                ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage3:5:U3|AND_2:U2  ; AND_2           ; work         ;
+;             |node_op:\stage3:6:U3|       ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage3:6:U3           ; node_op         ; work         ;
+;                |AND_2:U2|                ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage3:6:U3|AND_2:U2  ; AND_2           ; work         ;
+;             |node_op:\stage3:7:U3|       ; 2 (0)       ; 0            ; 0          ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage3:7:U3           ; node_op         ; work         ;
+;                |AND_2:U2|                ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage3:7:U3|AND_2:U2  ; AND_2           ; work         ;
+;             |node_op:\stage3:8:U3|       ; 2 (0)       ; 0            ; 0          ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage3:8:U3           ; node_op         ; work         ;
+;                |AND_2:U2|                ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage3:8:U3|AND_2:U2  ; AND_2           ; work         ;
+;             |node_op:\stage3:9:U3|       ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage3:9:U3           ; node_op         ; work         ;
+;                |AND_2:U2|                ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage3:9:U3|AND_2:U2  ; AND_2           ; work         ;
+;             |node_op:\stage4:7:U4|       ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage4:7:U4           ; node_op         ; work         ;
+;                |AND_2:U2|                ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage4:7:U4|AND_2:U2  ; AND_2           ; work         ;
 +------------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+----------------------------------------------------------------------------------+-----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -450,7 +451,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +---------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "subtractor:F2|twos_complement:F1|KS_ADDER:F1"                                            ;
+; Port Connectivity Checks: "subtractor:F2|twos_complement:F1|KS_ADDER:F2"                                            ;
 +-----------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port      ; Type   ; Severity ; Details                                                                             ;
 +-----------+--------+----------+-------------------------------------------------------------------------------------+
@@ -475,70 +476,74 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Fri Dec  4 21:29:22 2020
+    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+    Info: Processing started: Sat Dec 05 03:57:06 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ALU -c ALU
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
-Info (12021): Found 2 design units, including 1 entities, in source file ALU.vhd
-    Info (12022): Found design unit 1: ALU-structure File: /home/captain/Project_A/ALU.vhd Line: 12
-    Info (12023): Found entity 1: ALU File: /home/captain/Project_A/ALU.vhd Line: 2
+Info (12021): Found 2 design units, including 1 entities, in source file alu.vhd
+    Info (12022): Found design unit 1: ALU-structure File: S:/VHDL Projects/Project_A/ALU.vhd Line: 13
+    Info (12023): Found entity 1: ALU File: S:/VHDL Projects/Project_A/ALU.vhd Line: 3
 Warning (12019): Can't analyze file -- file MY_XOR.vhd is missing
-Info (12021): Found 2 design units, including 1 entities, in source file XOR2.vhd
-    Info (12022): Found design unit 1: XOR2-struct File: /home/captain/Project_A/XOR2.vhd Line: 9
-    Info (12023): Found entity 1: XOR2 File: /home/captain/Project_A/XOR2.vhd Line: 1
-Info (12021): Found 2 design units, including 1 entities, in source file XOR1.vhd
-    Info (12022): Found design unit 1: XOR1-plan File: /home/captain/Project_A/XOR1.vhd Line: 8
-    Info (12023): Found entity 1: XOR1 File: /home/captain/Project_A/XOR1.vhd Line: 1
+Info (12021): Found 2 design units, including 1 entities, in source file xor2.vhd
+    Info (12022): Found design unit 1: XOR2-struct File: S:/VHDL Projects/Project_A/XOR2.vhd Line: 9
+    Info (12023): Found entity 1: XOR2 File: S:/VHDL Projects/Project_A/XOR2.vhd Line: 1
+Info (12021): Found 2 design units, including 1 entities, in source file xor1.vhd
+    Info (12022): Found design unit 1: XOR1-plan File: S:/VHDL Projects/Project_A/XOR1.vhd Line: 8
+    Info (12023): Found entity 1: XOR1 File: S:/VHDL Projects/Project_A/XOR1.vhd Line: 1
 Info (12021): Found 2 design units, including 1 entities, in source file gp_cal.vhd
-    Info (12022): Found design unit 1: gp_cal-struct File: /home/captain/Project_A/gp_cal.vhd Line: 8
-    Info (12023): Found entity 1: gp_cal File: /home/captain/Project_A/gp_cal.vhd Line: 1
+    Info (12022): Found design unit 1: gp_cal-struct File: S:/VHDL Projects/Project_A/gp_cal.vhd Line: 8
+    Info (12023): Found entity 1: gp_cal File: S:/VHDL Projects/Project_A/gp_cal.vhd Line: 1
 Warning (12019): Can't analyze file -- file GP_arr.vhd is missing
 Warning (12019): Can't analyze file -- file OR2.vhd is missing
 Warning (12019): Can't analyze file -- file AND2.vhd is missing
 Info (12021): Found 2 design units, including 1 entities, in source file node_op.vhd
-    Info (12022): Found design unit 1: node_op-struct File: /home/captain/Project_A/node_op.vhd Line: 8
-    Info (12023): Found entity 1: node_op File: /home/captain/Project_A/node_op.vhd Line: 1
-Info (12021): Found 2 design units, including 1 entities, in source file KS_ADDER.vhd
-    Info (12022): Found design unit 1: KS_ADDER-calc File: /home/captain/Project_A/KS_ADDER.vhd Line: 9
-    Info (12023): Found entity 1: KS_ADDER File: /home/captain/Project_A/KS_ADDER.vhd Line: 1
-Info (12021): Found 2 design units, including 1 entities, in source file Testbench.vhd
-    Info (12022): Found design unit 1: Testbench-tb File: /home/captain/Project_A/Testbench.vhd Line: 4
-    Info (12023): Found entity 1: Testbench File: /home/captain/Project_A/Testbench.vhd Line: 1
+    Info (12022): Found design unit 1: node_op-struct File: S:/VHDL Projects/Project_A/node_op.vhd Line: 8
+    Info (12023): Found entity 1: node_op File: S:/VHDL Projects/Project_A/node_op.vhd Line: 1
+Info (12021): Found 2 design units, including 1 entities, in source file ks_adder.vhd
+    Info (12022): Found design unit 1: KS_ADDER-calc File: S:/VHDL Projects/Project_A/KS_ADDER.vhd Line: 9
+    Info (12023): Found entity 1: KS_ADDER File: S:/VHDL Projects/Project_A/KS_ADDER.vhd Line: 1
+Info (12021): Found 2 design units, including 1 entities, in source file testbench.vhd
+    Info (12022): Found design unit 1: Testbench-tb File: S:/VHDL Projects/Project_A/Testbench.vhd Line: 4
+    Info (12023): Found entity 1: Testbench File: S:/VHDL Projects/Project_A/Testbench.vhd Line: 1
+Info (12021): Found 2 design units, including 1 entities, in source file ones_complement.vhd
+    Info (12022): Found design unit 1: ones_complement-struct File: S:/VHDL Projects/Project_A/ones_complement.vhd Line: 9
+    Info (12023): Found entity 1: ones_complement File: S:/VHDL Projects/Project_A/ones_complement.vhd Line: 1
 Info (12127): Elaborating entity "ALU" for the top level hierarchy
-Info (12128): Elaborating entity "KS_ADDER" for hierarchy "KS_ADDER:F1" File: /home/captain/Project_A/ALU.vhd Line: 48
-Info (12128): Elaborating entity "gp_cal" for hierarchy "KS_ADDER:F1|gp_cal:\pre_processing:0:pre" File: /home/captain/Project_A/KS_ADDER.vhd Line: 33
-Info (12128): Elaborating entity "node_op" for hierarchy "KS_ADDER:F1|node_op:\stage1:0:U1" File: /home/captain/Project_A/KS_ADDER.vhd Line: 44
-Warning (12125): Using design file AND_2.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: AND_2-struct File: /home/captain/Project_A/AND_2.vhd Line: 9
-    Info (12023): Found entity 1: AND_2 File: /home/captain/Project_A/AND_2.vhd Line: 1
-Info (12128): Elaborating entity "AND_2" for hierarchy "KS_ADDER:F1|node_op:\stage1:0:U1|AND_2:U0" File: /home/captain/Project_A/node_op.vhd Line: 26
-Warning (12125): Using design file OR_2.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: OR_2-struct File: /home/captain/Project_A/OR_2.vhd Line: 9
-    Info (12023): Found entity 1: OR_2 File: /home/captain/Project_A/OR_2.vhd Line: 1
-Info (12128): Elaborating entity "OR_2" for hierarchy "KS_ADDER:F1|node_op:\stage1:0:U1|OR_2:U1" File: /home/captain/Project_A/node_op.vhd Line: 27
+Info (12128): Elaborating entity "KS_ADDER" for hierarchy "KS_ADDER:F1" File: S:/VHDL Projects/Project_A/ALU.vhd Line: 49
+Info (12128): Elaborating entity "gp_cal" for hierarchy "KS_ADDER:F1|gp_cal:\pre_processing:0:pre" File: S:/VHDL Projects/Project_A/KS_ADDER.vhd Line: 33
+Info (12128): Elaborating entity "node_op" for hierarchy "KS_ADDER:F1|node_op:\stage1:0:U1" File: S:/VHDL Projects/Project_A/KS_ADDER.vhd Line: 44
+Warning (12125): Using design file and_2.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: AND_2-struct File: S:/VHDL Projects/Project_A/and_2.vhd Line: 9
+    Info (12023): Found entity 1: AND_2 File: S:/VHDL Projects/Project_A/and_2.vhd Line: 1
+Info (12128): Elaborating entity "AND_2" for hierarchy "KS_ADDER:F1|node_op:\stage1:0:U1|AND_2:U0" File: S:/VHDL Projects/Project_A/node_op.vhd Line: 26
+Warning (12125): Using design file or_2.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: OR_2-struct File: S:/VHDL Projects/Project_A/or_2.vhd Line: 9
+    Info (12023): Found entity 1: OR_2 File: S:/VHDL Projects/Project_A/or_2.vhd Line: 1
+Info (12128): Elaborating entity "OR_2" for hierarchy "KS_ADDER:F1|node_op:\stage1:0:U1|OR_2:U1" File: S:/VHDL Projects/Project_A/node_op.vhd Line: 27
 Warning (12125): Using design file subtractor.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: subtractor-calc File: /home/captain/Project_A/subtractor.vhd Line: 8
-    Info (12023): Found entity 1: subtractor File: /home/captain/Project_A/subtractor.vhd Line: 1
-Info (12128): Elaborating entity "subtractor" for hierarchy "subtractor:F2" File: /home/captain/Project_A/ALU.vhd Line: 49
+    Info (12022): Found design unit 1: subtractor-calc File: S:/VHDL Projects/Project_A/subtractor.vhd Line: 8
+    Info (12023): Found entity 1: subtractor File: S:/VHDL Projects/Project_A/subtractor.vhd Line: 1
+Info (12128): Elaborating entity "subtractor" for hierarchy "subtractor:F2" File: S:/VHDL Projects/Project_A/ALU.vhd Line: 50
 Warning (12125): Using design file twos_complement.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: twos_complement-calc File: /home/captain/Project_A/twos_complement.vhd Line: 8
-    Info (12023): Found entity 1: twos_complement File: /home/captain/Project_A/twos_complement.vhd Line: 1
-Info (12128): Elaborating entity "twos_complement" for hierarchy "subtractor:F2|twos_complement:F1" File: /home/captain/Project_A/subtractor.vhd Line: 27
-Info (12128): Elaborating entity "XOR1" for hierarchy "XOR1:F3" File: /home/captain/Project_A/ALU.vhd Line: 50
-Info (12128): Elaborating entity "XOR2" for hierarchy "XOR1:F3|XOR2:\process1:0:U0" File: /home/captain/Project_A/XOR1.vhd Line: 19
-Warning (12125): Using design file NAND1.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: NAND1-plan File: /home/captain/Project_A/NAND1.vhd Line: 8
-    Info (12023): Found entity 1: NAND1 File: /home/captain/Project_A/NAND1.vhd Line: 1
-Info (12128): Elaborating entity "NAND1" for hierarchy "NAND1:F4" File: /home/captain/Project_A/ALU.vhd Line: 51
+    Info (12022): Found design unit 1: twos_complement-calc File: S:/VHDL Projects/Project_A/twos_complement.vhd Line: 8
+    Info (12023): Found entity 1: twos_complement File: S:/VHDL Projects/Project_A/twos_complement.vhd Line: 1
+Info (12128): Elaborating entity "twos_complement" for hierarchy "subtractor:F2|twos_complement:F1" File: S:/VHDL Projects/Project_A/subtractor.vhd Line: 27
+Info (12128): Elaborating entity "ones_complement" for hierarchy "subtractor:F2|twos_complement:F1|ones_complement:F1" File: S:/VHDL Projects/Project_A/twos_complement.vhd Line: 25
+Info (12128): Elaborating entity "XOR1" for hierarchy "XOR1:F3" File: S:/VHDL Projects/Project_A/ALU.vhd Line: 51
+Info (12128): Elaborating entity "XOR2" for hierarchy "XOR1:F3|XOR2:\process1:0:U0" File: S:/VHDL Projects/Project_A/XOR1.vhd Line: 19
+Warning (12125): Using design file nand1.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: NAND1-plan File: S:/VHDL Projects/Project_A/nand1.vhd Line: 8
+    Info (12023): Found entity 1: NAND1 File: S:/VHDL Projects/Project_A/nand1.vhd Line: 1
+Info (12128): Elaborating entity "NAND1" for hierarchy "NAND1:F4" File: S:/VHDL Projects/Project_A/ALU.vhd Line: 52
 Info (21057): Implemented 281 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 34 input pins
     Info (21059): Implemented 18 output pins
     Info (21061): Implemented 229 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 10 warnings
-    Info: Peak virtual memory: 437 megabytes
-    Info: Processing ended: Fri Dec  4 21:29:33 2020
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:25
+    Info: Peak virtual memory: 4763 megabytes
+    Info: Processing ended: Sat Dec 05 03:57:16 2020
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:21
 
 

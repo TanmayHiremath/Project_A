@@ -1792,41 +1792,76 @@ O[15] <= KS_ADDER:F2.A[15]
 
 
 |ALU|subtractor:F2|twos_complement:F1
-I0[0] => KS_ADDER:F1.I0[0]
-I0[1] => KS_ADDER:F1.I0[1]
-I0[2] => KS_ADDER:F1.I0[2]
-I0[3] => KS_ADDER:F1.I0[3]
-I0[4] => KS_ADDER:F1.I0[4]
-I0[5] => KS_ADDER:F1.I0[5]
-I0[6] => KS_ADDER:F1.I0[6]
-I0[7] => KS_ADDER:F1.I0[7]
-I0[8] => KS_ADDER:F1.I0[8]
-I0[9] => KS_ADDER:F1.I0[9]
-I0[10] => KS_ADDER:F1.I0[10]
-I0[11] => KS_ADDER:F1.I0[11]
-I0[12] => KS_ADDER:F1.I0[12]
-I0[13] => KS_ADDER:F1.I0[13]
-I0[14] => KS_ADDER:F1.I0[14]
-I0[15] => KS_ADDER:F1.I0[15]
-A[0] <= KS_ADDER:F1.A[0]
-A[1] <= KS_ADDER:F1.A[1]
-A[2] <= KS_ADDER:F1.A[2]
-A[3] <= KS_ADDER:F1.A[3]
-A[4] <= KS_ADDER:F1.A[4]
-A[5] <= KS_ADDER:F1.A[5]
-A[6] <= KS_ADDER:F1.A[6]
-A[7] <= KS_ADDER:F1.A[7]
-A[8] <= KS_ADDER:F1.A[8]
-A[9] <= KS_ADDER:F1.A[9]
-A[10] <= KS_ADDER:F1.A[10]
-A[11] <= KS_ADDER:F1.A[11]
-A[12] <= KS_ADDER:F1.A[12]
-A[13] <= KS_ADDER:F1.A[13]
-A[14] <= KS_ADDER:F1.A[14]
-A[15] <= KS_ADDER:F1.A[15]
+I0[0] => ones_complement:F1.I0[0]
+I0[1] => ones_complement:F1.I0[1]
+I0[2] => ones_complement:F1.I0[2]
+I0[3] => ones_complement:F1.I0[3]
+I0[4] => ones_complement:F1.I0[4]
+I0[5] => ones_complement:F1.I0[5]
+I0[6] => ones_complement:F1.I0[6]
+I0[7] => ones_complement:F1.I0[7]
+I0[8] => ones_complement:F1.I0[8]
+I0[9] => ones_complement:F1.I0[9]
+I0[10] => ones_complement:F1.I0[10]
+I0[11] => ones_complement:F1.I0[11]
+I0[12] => ones_complement:F1.I0[12]
+I0[13] => ones_complement:F1.I0[13]
+I0[14] => ones_complement:F1.I0[14]
+I0[15] => ones_complement:F1.I0[15]
+A[0] <= KS_ADDER:F2.A[0]
+A[1] <= KS_ADDER:F2.A[1]
+A[2] <= KS_ADDER:F2.A[2]
+A[3] <= KS_ADDER:F2.A[3]
+A[4] <= KS_ADDER:F2.A[4]
+A[5] <= KS_ADDER:F2.A[5]
+A[6] <= KS_ADDER:F2.A[6]
+A[7] <= KS_ADDER:F2.A[7]
+A[8] <= KS_ADDER:F2.A[8]
+A[9] <= KS_ADDER:F2.A[9]
+A[10] <= KS_ADDER:F2.A[10]
+A[11] <= KS_ADDER:F2.A[11]
+A[12] <= KS_ADDER:F2.A[12]
+A[13] <= KS_ADDER:F2.A[13]
+A[14] <= KS_ADDER:F2.A[14]
+A[15] <= KS_ADDER:F2.A[15]
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1
+|ALU|subtractor:F2|twos_complement:F1|ones_complement:F1
+I0[0] => O[0].DATAIN
+I0[1] => O[1].DATAIN
+I0[2] => O[2].DATAIN
+I0[3] => O[3].DATAIN
+I0[4] => O[4].DATAIN
+I0[5] => O[5].DATAIN
+I0[6] => O[6].DATAIN
+I0[7] => O[7].DATAIN
+I0[8] => O[8].DATAIN
+I0[9] => O[9].DATAIN
+I0[10] => O[10].DATAIN
+I0[11] => O[11].DATAIN
+I0[12] => O[12].DATAIN
+I0[13] => O[13].DATAIN
+I0[14] => O[14].DATAIN
+I0[15] => O[15].DATAIN
+O[0] <= I0[0].DB_MAX_OUTPUT_PORT_TYPE
+O[1] <= I0[1].DB_MAX_OUTPUT_PORT_TYPE
+O[2] <= I0[2].DB_MAX_OUTPUT_PORT_TYPE
+O[3] <= I0[3].DB_MAX_OUTPUT_PORT_TYPE
+O[4] <= I0[4].DB_MAX_OUTPUT_PORT_TYPE
+O[5] <= I0[5].DB_MAX_OUTPUT_PORT_TYPE
+O[6] <= I0[6].DB_MAX_OUTPUT_PORT_TYPE
+O[7] <= I0[7].DB_MAX_OUTPUT_PORT_TYPE
+O[8] <= I0[8].DB_MAX_OUTPUT_PORT_TYPE
+O[9] <= I0[9].DB_MAX_OUTPUT_PORT_TYPE
+O[10] <= I0[10].DB_MAX_OUTPUT_PORT_TYPE
+O[11] <= I0[11].DB_MAX_OUTPUT_PORT_TYPE
+O[12] <= I0[12].DB_MAX_OUTPUT_PORT_TYPE
+O[13] <= I0[13].DB_MAX_OUTPUT_PORT_TYPE
+O[14] <= I0[14].DB_MAX_OUTPUT_PORT_TYPE
+O[15] <= I0[15].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2
 I0[0] => gp_cal:pre_processing:0:pre.Ai
 I0[1] => gp_cal:pre_processing:1:pre.Ai
 I0[2] => gp_cal:pre_processing:2:pre.Ai
@@ -1895,7 +1930,7 @@ A[15] <= sum.DB_MAX_OUTPUT_PORT_TYPE
 C_out <= carry.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|gp_cal:\pre_processing:0:pre
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|gp_cal:\pre_processing:0:pre
 Ai => Gi.IN0
 Ai => Pi.IN0
 Bi => Gi.IN1
@@ -1904,7 +1939,7 @@ Gi <= Gi.DB_MAX_OUTPUT_PORT_TYPE
 Pi <= Pi.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|gp_cal:\pre_processing:1:pre
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|gp_cal:\pre_processing:1:pre
 Ai => Gi.IN0
 Ai => Pi.IN0
 Bi => Gi.IN1
@@ -1913,7 +1948,7 @@ Gi <= Gi.DB_MAX_OUTPUT_PORT_TYPE
 Pi <= Pi.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|gp_cal:\pre_processing:2:pre
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|gp_cal:\pre_processing:2:pre
 Ai => Gi.IN0
 Ai => Pi.IN0
 Bi => Gi.IN1
@@ -1922,7 +1957,7 @@ Gi <= Gi.DB_MAX_OUTPUT_PORT_TYPE
 Pi <= Pi.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|gp_cal:\pre_processing:3:pre
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|gp_cal:\pre_processing:3:pre
 Ai => Gi.IN0
 Ai => Pi.IN0
 Bi => Gi.IN1
@@ -1931,7 +1966,7 @@ Gi <= Gi.DB_MAX_OUTPUT_PORT_TYPE
 Pi <= Pi.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|gp_cal:\pre_processing:4:pre
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|gp_cal:\pre_processing:4:pre
 Ai => Gi.IN0
 Ai => Pi.IN0
 Bi => Gi.IN1
@@ -1940,7 +1975,7 @@ Gi <= Gi.DB_MAX_OUTPUT_PORT_TYPE
 Pi <= Pi.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|gp_cal:\pre_processing:5:pre
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|gp_cal:\pre_processing:5:pre
 Ai => Gi.IN0
 Ai => Pi.IN0
 Bi => Gi.IN1
@@ -1949,7 +1984,7 @@ Gi <= Gi.DB_MAX_OUTPUT_PORT_TYPE
 Pi <= Pi.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|gp_cal:\pre_processing:6:pre
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|gp_cal:\pre_processing:6:pre
 Ai => Gi.IN0
 Ai => Pi.IN0
 Bi => Gi.IN1
@@ -1958,7 +1993,7 @@ Gi <= Gi.DB_MAX_OUTPUT_PORT_TYPE
 Pi <= Pi.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|gp_cal:\pre_processing:7:pre
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|gp_cal:\pre_processing:7:pre
 Ai => Gi.IN0
 Ai => Pi.IN0
 Bi => Gi.IN1
@@ -1967,7 +2002,7 @@ Gi <= Gi.DB_MAX_OUTPUT_PORT_TYPE
 Pi <= Pi.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|gp_cal:\pre_processing:8:pre
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|gp_cal:\pre_processing:8:pre
 Ai => Gi.IN0
 Ai => Pi.IN0
 Bi => Gi.IN1
@@ -1976,7 +2011,7 @@ Gi <= Gi.DB_MAX_OUTPUT_PORT_TYPE
 Pi <= Pi.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|gp_cal:\pre_processing:9:pre
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|gp_cal:\pre_processing:9:pre
 Ai => Gi.IN0
 Ai => Pi.IN0
 Bi => Gi.IN1
@@ -1985,7 +2020,7 @@ Gi <= Gi.DB_MAX_OUTPUT_PORT_TYPE
 Pi <= Pi.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|gp_cal:\pre_processing:10:pre
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|gp_cal:\pre_processing:10:pre
 Ai => Gi.IN0
 Ai => Pi.IN0
 Bi => Gi.IN1
@@ -1994,7 +2029,7 @@ Gi <= Gi.DB_MAX_OUTPUT_PORT_TYPE
 Pi <= Pi.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|gp_cal:\pre_processing:11:pre
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|gp_cal:\pre_processing:11:pre
 Ai => Gi.IN0
 Ai => Pi.IN0
 Bi => Gi.IN1
@@ -2003,7 +2038,7 @@ Gi <= Gi.DB_MAX_OUTPUT_PORT_TYPE
 Pi <= Pi.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|gp_cal:\pre_processing:12:pre
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|gp_cal:\pre_processing:12:pre
 Ai => Gi.IN0
 Ai => Pi.IN0
 Bi => Gi.IN1
@@ -2012,7 +2047,7 @@ Gi <= Gi.DB_MAX_OUTPUT_PORT_TYPE
 Pi <= Pi.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|gp_cal:\pre_processing:13:pre
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|gp_cal:\pre_processing:13:pre
 Ai => Gi.IN0
 Ai => Pi.IN0
 Bi => Gi.IN1
@@ -2021,7 +2056,7 @@ Gi <= Gi.DB_MAX_OUTPUT_PORT_TYPE
 Pi <= Pi.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|gp_cal:\pre_processing:14:pre
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|gp_cal:\pre_processing:14:pre
 Ai => Gi.IN0
 Ai => Pi.IN0
 Bi => Gi.IN1
@@ -2030,7 +2065,7 @@ Gi <= Gi.DB_MAX_OUTPUT_PORT_TYPE
 Pi <= Pi.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|gp_cal:\pre_processing:15:pre
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|gp_cal:\pre_processing:15:pre
 Ai => Gi.IN0
 Ai => Pi.IN0
 Bi => Gi.IN1
@@ -2039,7 +2074,7 @@ Gi <= Gi.DB_MAX_OUTPUT_PORT_TYPE
 Pi <= Pi.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage1:0:U1
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage1:0:U1
 g1 => AND_2:U0.F
 p1 => AND_2:U2.F
 g2 => OR_2:U1.H
@@ -2049,25 +2084,25 @@ Gi <= OR_2:U1.J
 Pi <= AND_2:U2.G
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage1:0:U1|AND_2:U0
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage1:0:U1|AND_2:U0
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage1:0:U1|OR_2:U1
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage1:0:U1|OR_2:U1
 H => J.IN0
 I => J.IN1
 J <= J.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage1:0:U1|AND_2:U2
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage1:0:U1|AND_2:U2
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage1:1:U1
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage1:1:U1
 g1 => AND_2:U0.F
 p1 => AND_2:U2.F
 g2 => OR_2:U1.H
@@ -2077,25 +2112,25 @@ Gi <= OR_2:U1.J
 Pi <= AND_2:U2.G
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage1:1:U1|AND_2:U0
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage1:1:U1|AND_2:U0
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage1:1:U1|OR_2:U1
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage1:1:U1|OR_2:U1
 H => J.IN0
 I => J.IN1
 J <= J.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage1:1:U1|AND_2:U2
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage1:1:U1|AND_2:U2
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage1:2:U1
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage1:2:U1
 g1 => AND_2:U0.F
 p1 => AND_2:U2.F
 g2 => OR_2:U1.H
@@ -2105,25 +2140,25 @@ Gi <= OR_2:U1.J
 Pi <= AND_2:U2.G
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage1:2:U1|AND_2:U0
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage1:2:U1|AND_2:U0
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage1:2:U1|OR_2:U1
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage1:2:U1|OR_2:U1
 H => J.IN0
 I => J.IN1
 J <= J.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage1:2:U1|AND_2:U2
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage1:2:U1|AND_2:U2
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage1:3:U1
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage1:3:U1
 g1 => AND_2:U0.F
 p1 => AND_2:U2.F
 g2 => OR_2:U1.H
@@ -2133,25 +2168,25 @@ Gi <= OR_2:U1.J
 Pi <= AND_2:U2.G
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage1:3:U1|AND_2:U0
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage1:3:U1|AND_2:U0
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage1:3:U1|OR_2:U1
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage1:3:U1|OR_2:U1
 H => J.IN0
 I => J.IN1
 J <= J.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage1:3:U1|AND_2:U2
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage1:3:U1|AND_2:U2
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage1:4:U1
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage1:4:U1
 g1 => AND_2:U0.F
 p1 => AND_2:U2.F
 g2 => OR_2:U1.H
@@ -2161,25 +2196,25 @@ Gi <= OR_2:U1.J
 Pi <= AND_2:U2.G
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage1:4:U1|AND_2:U0
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage1:4:U1|AND_2:U0
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage1:4:U1|OR_2:U1
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage1:4:U1|OR_2:U1
 H => J.IN0
 I => J.IN1
 J <= J.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage1:4:U1|AND_2:U2
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage1:4:U1|AND_2:U2
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage1:5:U1
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage1:5:U1
 g1 => AND_2:U0.F
 p1 => AND_2:U2.F
 g2 => OR_2:U1.H
@@ -2189,25 +2224,25 @@ Gi <= OR_2:U1.J
 Pi <= AND_2:U2.G
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage1:5:U1|AND_2:U0
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage1:5:U1|AND_2:U0
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage1:5:U1|OR_2:U1
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage1:5:U1|OR_2:U1
 H => J.IN0
 I => J.IN1
 J <= J.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage1:5:U1|AND_2:U2
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage1:5:U1|AND_2:U2
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage1:6:U1
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage1:6:U1
 g1 => AND_2:U0.F
 p1 => AND_2:U2.F
 g2 => OR_2:U1.H
@@ -2217,25 +2252,25 @@ Gi <= OR_2:U1.J
 Pi <= AND_2:U2.G
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage1:6:U1|AND_2:U0
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage1:6:U1|AND_2:U0
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage1:6:U1|OR_2:U1
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage1:6:U1|OR_2:U1
 H => J.IN0
 I => J.IN1
 J <= J.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage1:6:U1|AND_2:U2
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage1:6:U1|AND_2:U2
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage1:7:U1
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage1:7:U1
 g1 => AND_2:U0.F
 p1 => AND_2:U2.F
 g2 => OR_2:U1.H
@@ -2245,25 +2280,25 @@ Gi <= OR_2:U1.J
 Pi <= AND_2:U2.G
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage1:7:U1|AND_2:U0
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage1:7:U1|AND_2:U0
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage1:7:U1|OR_2:U1
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage1:7:U1|OR_2:U1
 H => J.IN0
 I => J.IN1
 J <= J.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage1:7:U1|AND_2:U2
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage1:7:U1|AND_2:U2
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage1:8:U1
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage1:8:U1
 g1 => AND_2:U0.F
 p1 => AND_2:U2.F
 g2 => OR_2:U1.H
@@ -2273,25 +2308,25 @@ Gi <= OR_2:U1.J
 Pi <= AND_2:U2.G
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage1:8:U1|AND_2:U0
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage1:8:U1|AND_2:U0
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage1:8:U1|OR_2:U1
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage1:8:U1|OR_2:U1
 H => J.IN0
 I => J.IN1
 J <= J.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage1:8:U1|AND_2:U2
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage1:8:U1|AND_2:U2
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage1:9:U1
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage1:9:U1
 g1 => AND_2:U0.F
 p1 => AND_2:U2.F
 g2 => OR_2:U1.H
@@ -2301,25 +2336,25 @@ Gi <= OR_2:U1.J
 Pi <= AND_2:U2.G
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage1:9:U1|AND_2:U0
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage1:9:U1|AND_2:U0
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage1:9:U1|OR_2:U1
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage1:9:U1|OR_2:U1
 H => J.IN0
 I => J.IN1
 J <= J.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage1:9:U1|AND_2:U2
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage1:9:U1|AND_2:U2
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage1:10:U1
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage1:10:U1
 g1 => AND_2:U0.F
 p1 => AND_2:U2.F
 g2 => OR_2:U1.H
@@ -2329,25 +2364,25 @@ Gi <= OR_2:U1.J
 Pi <= AND_2:U2.G
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage1:10:U1|AND_2:U0
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage1:10:U1|AND_2:U0
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage1:10:U1|OR_2:U1
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage1:10:U1|OR_2:U1
 H => J.IN0
 I => J.IN1
 J <= J.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage1:10:U1|AND_2:U2
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage1:10:U1|AND_2:U2
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage1:11:U1
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage1:11:U1
 g1 => AND_2:U0.F
 p1 => AND_2:U2.F
 g2 => OR_2:U1.H
@@ -2357,25 +2392,25 @@ Gi <= OR_2:U1.J
 Pi <= AND_2:U2.G
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage1:11:U1|AND_2:U0
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage1:11:U1|AND_2:U0
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage1:11:U1|OR_2:U1
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage1:11:U1|OR_2:U1
 H => J.IN0
 I => J.IN1
 J <= J.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage1:11:U1|AND_2:U2
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage1:11:U1|AND_2:U2
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage1:12:U1
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage1:12:U1
 g1 => AND_2:U0.F
 p1 => AND_2:U2.F
 g2 => OR_2:U1.H
@@ -2385,25 +2420,25 @@ Gi <= OR_2:U1.J
 Pi <= AND_2:U2.G
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage1:12:U1|AND_2:U0
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage1:12:U1|AND_2:U0
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage1:12:U1|OR_2:U1
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage1:12:U1|OR_2:U1
 H => J.IN0
 I => J.IN1
 J <= J.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage1:12:U1|AND_2:U2
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage1:12:U1|AND_2:U2
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage1:13:U1
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage1:13:U1
 g1 => AND_2:U0.F
 p1 => AND_2:U2.F
 g2 => OR_2:U1.H
@@ -2413,25 +2448,25 @@ Gi <= OR_2:U1.J
 Pi <= AND_2:U2.G
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage1:13:U1|AND_2:U0
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage1:13:U1|AND_2:U0
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage1:13:U1|OR_2:U1
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage1:13:U1|OR_2:U1
 H => J.IN0
 I => J.IN1
 J <= J.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage1:13:U1|AND_2:U2
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage1:13:U1|AND_2:U2
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage1:14:U1
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage1:14:U1
 g1 => AND_2:U0.F
 p1 => AND_2:U2.F
 g2 => OR_2:U1.H
@@ -2441,25 +2476,25 @@ Gi <= OR_2:U1.J
 Pi <= AND_2:U2.G
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage1:14:U1|AND_2:U0
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage1:14:U1|AND_2:U0
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage1:14:U1|OR_2:U1
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage1:14:U1|OR_2:U1
 H => J.IN0
 I => J.IN1
 J <= J.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage1:14:U1|AND_2:U2
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage1:14:U1|AND_2:U2
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage2:0:U2
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage2:0:U2
 g1 => AND_2:U0.F
 p1 => AND_2:U2.F
 g2 => OR_2:U1.H
@@ -2469,25 +2504,25 @@ Gi <= OR_2:U1.J
 Pi <= AND_2:U2.G
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage2:0:U2|AND_2:U0
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage2:0:U2|AND_2:U0
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage2:0:U2|OR_2:U1
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage2:0:U2|OR_2:U1
 H => J.IN0
 I => J.IN1
 J <= J.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage2:0:U2|AND_2:U2
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage2:0:U2|AND_2:U2
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage2:1:U2
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage2:1:U2
 g1 => AND_2:U0.F
 p1 => AND_2:U2.F
 g2 => OR_2:U1.H
@@ -2497,25 +2532,25 @@ Gi <= OR_2:U1.J
 Pi <= AND_2:U2.G
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage2:1:U2|AND_2:U0
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage2:1:U2|AND_2:U0
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage2:1:U2|OR_2:U1
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage2:1:U2|OR_2:U1
 H => J.IN0
 I => J.IN1
 J <= J.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage2:1:U2|AND_2:U2
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage2:1:U2|AND_2:U2
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage2:2:U2
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage2:2:U2
 g1 => AND_2:U0.F
 p1 => AND_2:U2.F
 g2 => OR_2:U1.H
@@ -2525,25 +2560,25 @@ Gi <= OR_2:U1.J
 Pi <= AND_2:U2.G
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage2:2:U2|AND_2:U0
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage2:2:U2|AND_2:U0
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage2:2:U2|OR_2:U1
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage2:2:U2|OR_2:U1
 H => J.IN0
 I => J.IN1
 J <= J.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage2:2:U2|AND_2:U2
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage2:2:U2|AND_2:U2
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage2:3:U2
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage2:3:U2
 g1 => AND_2:U0.F
 p1 => AND_2:U2.F
 g2 => OR_2:U1.H
@@ -2553,25 +2588,25 @@ Gi <= OR_2:U1.J
 Pi <= AND_2:U2.G
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage2:3:U2|AND_2:U0
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage2:3:U2|AND_2:U0
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage2:3:U2|OR_2:U1
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage2:3:U2|OR_2:U1
 H => J.IN0
 I => J.IN1
 J <= J.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage2:3:U2|AND_2:U2
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage2:3:U2|AND_2:U2
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage2:4:U2
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage2:4:U2
 g1 => AND_2:U0.F
 p1 => AND_2:U2.F
 g2 => OR_2:U1.H
@@ -2581,25 +2616,25 @@ Gi <= OR_2:U1.J
 Pi <= AND_2:U2.G
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage2:4:U2|AND_2:U0
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage2:4:U2|AND_2:U0
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage2:4:U2|OR_2:U1
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage2:4:U2|OR_2:U1
 H => J.IN0
 I => J.IN1
 J <= J.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage2:4:U2|AND_2:U2
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage2:4:U2|AND_2:U2
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage2:5:U2
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage2:5:U2
 g1 => AND_2:U0.F
 p1 => AND_2:U2.F
 g2 => OR_2:U1.H
@@ -2609,25 +2644,25 @@ Gi <= OR_2:U1.J
 Pi <= AND_2:U2.G
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage2:5:U2|AND_2:U0
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage2:5:U2|AND_2:U0
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage2:5:U2|OR_2:U1
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage2:5:U2|OR_2:U1
 H => J.IN0
 I => J.IN1
 J <= J.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage2:5:U2|AND_2:U2
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage2:5:U2|AND_2:U2
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage2:6:U2
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage2:6:U2
 g1 => AND_2:U0.F
 p1 => AND_2:U2.F
 g2 => OR_2:U1.H
@@ -2637,25 +2672,25 @@ Gi <= OR_2:U1.J
 Pi <= AND_2:U2.G
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage2:6:U2|AND_2:U0
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage2:6:U2|AND_2:U0
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage2:6:U2|OR_2:U1
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage2:6:U2|OR_2:U1
 H => J.IN0
 I => J.IN1
 J <= J.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage2:6:U2|AND_2:U2
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage2:6:U2|AND_2:U2
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage2:7:U2
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage2:7:U2
 g1 => AND_2:U0.F
 p1 => AND_2:U2.F
 g2 => OR_2:U1.H
@@ -2665,25 +2700,25 @@ Gi <= OR_2:U1.J
 Pi <= AND_2:U2.G
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage2:7:U2|AND_2:U0
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage2:7:U2|AND_2:U0
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage2:7:U2|OR_2:U1
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage2:7:U2|OR_2:U1
 H => J.IN0
 I => J.IN1
 J <= J.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage2:7:U2|AND_2:U2
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage2:7:U2|AND_2:U2
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage2:8:U2
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage2:8:U2
 g1 => AND_2:U0.F
 p1 => AND_2:U2.F
 g2 => OR_2:U1.H
@@ -2693,25 +2728,25 @@ Gi <= OR_2:U1.J
 Pi <= AND_2:U2.G
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage2:8:U2|AND_2:U0
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage2:8:U2|AND_2:U0
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage2:8:U2|OR_2:U1
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage2:8:U2|OR_2:U1
 H => J.IN0
 I => J.IN1
 J <= J.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage2:8:U2|AND_2:U2
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage2:8:U2|AND_2:U2
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage2:9:U2
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage2:9:U2
 g1 => AND_2:U0.F
 p1 => AND_2:U2.F
 g2 => OR_2:U1.H
@@ -2721,25 +2756,25 @@ Gi <= OR_2:U1.J
 Pi <= AND_2:U2.G
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage2:9:U2|AND_2:U0
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage2:9:U2|AND_2:U0
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage2:9:U2|OR_2:U1
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage2:9:U2|OR_2:U1
 H => J.IN0
 I => J.IN1
 J <= J.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage2:9:U2|AND_2:U2
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage2:9:U2|AND_2:U2
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage2:10:U2
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage2:10:U2
 g1 => AND_2:U0.F
 p1 => AND_2:U2.F
 g2 => OR_2:U1.H
@@ -2749,25 +2784,25 @@ Gi <= OR_2:U1.J
 Pi <= AND_2:U2.G
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage2:10:U2|AND_2:U0
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage2:10:U2|AND_2:U0
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage2:10:U2|OR_2:U1
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage2:10:U2|OR_2:U1
 H => J.IN0
 I => J.IN1
 J <= J.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage2:10:U2|AND_2:U2
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage2:10:U2|AND_2:U2
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage2:11:U2
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage2:11:U2
 g1 => AND_2:U0.F
 p1 => AND_2:U2.F
 g2 => OR_2:U1.H
@@ -2777,25 +2812,25 @@ Gi <= OR_2:U1.J
 Pi <= AND_2:U2.G
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage2:11:U2|AND_2:U0
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage2:11:U2|AND_2:U0
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage2:11:U2|OR_2:U1
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage2:11:U2|OR_2:U1
 H => J.IN0
 I => J.IN1
 J <= J.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage2:11:U2|AND_2:U2
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage2:11:U2|AND_2:U2
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage2:12:U2
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage2:12:U2
 g1 => AND_2:U0.F
 p1 => AND_2:U2.F
 g2 => OR_2:U1.H
@@ -2805,25 +2840,25 @@ Gi <= OR_2:U1.J
 Pi <= AND_2:U2.G
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage2:12:U2|AND_2:U0
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage2:12:U2|AND_2:U0
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage2:12:U2|OR_2:U1
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage2:12:U2|OR_2:U1
 H => J.IN0
 I => J.IN1
 J <= J.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage2:12:U2|AND_2:U2
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage2:12:U2|AND_2:U2
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage2:13:U2
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage2:13:U2
 g1 => AND_2:U0.F
 p1 => AND_2:U2.F
 g2 => OR_2:U1.H
@@ -2833,25 +2868,25 @@ Gi <= OR_2:U1.J
 Pi <= AND_2:U2.G
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage2:13:U2|AND_2:U0
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage2:13:U2|AND_2:U0
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage2:13:U2|OR_2:U1
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage2:13:U2|OR_2:U1
 H => J.IN0
 I => J.IN1
 J <= J.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage2:13:U2|AND_2:U2
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage2:13:U2|AND_2:U2
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage3:0:U3
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage3:0:U3
 g1 => AND_2:U0.F
 p1 => AND_2:U2.F
 g2 => OR_2:U1.H
@@ -2861,25 +2896,25 @@ Gi <= OR_2:U1.J
 Pi <= AND_2:U2.G
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage3:0:U3|AND_2:U0
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage3:0:U3|AND_2:U0
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage3:0:U3|OR_2:U1
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage3:0:U3|OR_2:U1
 H => J.IN0
 I => J.IN1
 J <= J.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage3:0:U3|AND_2:U2
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage3:0:U3|AND_2:U2
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage3:1:U3
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage3:1:U3
 g1 => AND_2:U0.F
 p1 => AND_2:U2.F
 g2 => OR_2:U1.H
@@ -2889,25 +2924,25 @@ Gi <= OR_2:U1.J
 Pi <= AND_2:U2.G
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage3:1:U3|AND_2:U0
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage3:1:U3|AND_2:U0
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage3:1:U3|OR_2:U1
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage3:1:U3|OR_2:U1
 H => J.IN0
 I => J.IN1
 J <= J.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage3:1:U3|AND_2:U2
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage3:1:U3|AND_2:U2
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage3:2:U3
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage3:2:U3
 g1 => AND_2:U0.F
 p1 => AND_2:U2.F
 g2 => OR_2:U1.H
@@ -2917,25 +2952,25 @@ Gi <= OR_2:U1.J
 Pi <= AND_2:U2.G
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage3:2:U3|AND_2:U0
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage3:2:U3|AND_2:U0
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage3:2:U3|OR_2:U1
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage3:2:U3|OR_2:U1
 H => J.IN0
 I => J.IN1
 J <= J.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage3:2:U3|AND_2:U2
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage3:2:U3|AND_2:U2
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage3:3:U3
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage3:3:U3
 g1 => AND_2:U0.F
 p1 => AND_2:U2.F
 g2 => OR_2:U1.H
@@ -2945,25 +2980,25 @@ Gi <= OR_2:U1.J
 Pi <= AND_2:U2.G
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage3:3:U3|AND_2:U0
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage3:3:U3|AND_2:U0
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage3:3:U3|OR_2:U1
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage3:3:U3|OR_2:U1
 H => J.IN0
 I => J.IN1
 J <= J.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage3:3:U3|AND_2:U2
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage3:3:U3|AND_2:U2
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage3:4:U3
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage3:4:U3
 g1 => AND_2:U0.F
 p1 => AND_2:U2.F
 g2 => OR_2:U1.H
@@ -2973,25 +3008,25 @@ Gi <= OR_2:U1.J
 Pi <= AND_2:U2.G
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage3:4:U3|AND_2:U0
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage3:4:U3|AND_2:U0
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage3:4:U3|OR_2:U1
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage3:4:U3|OR_2:U1
 H => J.IN0
 I => J.IN1
 J <= J.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage3:4:U3|AND_2:U2
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage3:4:U3|AND_2:U2
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage3:5:U3
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage3:5:U3
 g1 => AND_2:U0.F
 p1 => AND_2:U2.F
 g2 => OR_2:U1.H
@@ -3001,25 +3036,25 @@ Gi <= OR_2:U1.J
 Pi <= AND_2:U2.G
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage3:5:U3|AND_2:U0
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage3:5:U3|AND_2:U0
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage3:5:U3|OR_2:U1
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage3:5:U3|OR_2:U1
 H => J.IN0
 I => J.IN1
 J <= J.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage3:5:U3|AND_2:U2
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage3:5:U3|AND_2:U2
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage3:6:U3
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage3:6:U3
 g1 => AND_2:U0.F
 p1 => AND_2:U2.F
 g2 => OR_2:U1.H
@@ -3029,25 +3064,25 @@ Gi <= OR_2:U1.J
 Pi <= AND_2:U2.G
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage3:6:U3|AND_2:U0
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage3:6:U3|AND_2:U0
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage3:6:U3|OR_2:U1
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage3:6:U3|OR_2:U1
 H => J.IN0
 I => J.IN1
 J <= J.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage3:6:U3|AND_2:U2
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage3:6:U3|AND_2:U2
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage3:7:U3
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage3:7:U3
 g1 => AND_2:U0.F
 p1 => AND_2:U2.F
 g2 => OR_2:U1.H
@@ -3057,25 +3092,25 @@ Gi <= OR_2:U1.J
 Pi <= AND_2:U2.G
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage3:7:U3|AND_2:U0
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage3:7:U3|AND_2:U0
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage3:7:U3|OR_2:U1
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage3:7:U3|OR_2:U1
 H => J.IN0
 I => J.IN1
 J <= J.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage3:7:U3|AND_2:U2
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage3:7:U3|AND_2:U2
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage3:8:U3
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage3:8:U3
 g1 => AND_2:U0.F
 p1 => AND_2:U2.F
 g2 => OR_2:U1.H
@@ -3085,25 +3120,25 @@ Gi <= OR_2:U1.J
 Pi <= AND_2:U2.G
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage3:8:U3|AND_2:U0
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage3:8:U3|AND_2:U0
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage3:8:U3|OR_2:U1
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage3:8:U3|OR_2:U1
 H => J.IN0
 I => J.IN1
 J <= J.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage3:8:U3|AND_2:U2
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage3:8:U3|AND_2:U2
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage3:9:U3
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage3:9:U3
 g1 => AND_2:U0.F
 p1 => AND_2:U2.F
 g2 => OR_2:U1.H
@@ -3113,25 +3148,25 @@ Gi <= OR_2:U1.J
 Pi <= AND_2:U2.G
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage3:9:U3|AND_2:U0
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage3:9:U3|AND_2:U0
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage3:9:U3|OR_2:U1
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage3:9:U3|OR_2:U1
 H => J.IN0
 I => J.IN1
 J <= J.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage3:9:U3|AND_2:U2
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage3:9:U3|AND_2:U2
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage3:10:U3
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage3:10:U3
 g1 => AND_2:U0.F
 p1 => AND_2:U2.F
 g2 => OR_2:U1.H
@@ -3141,25 +3176,25 @@ Gi <= OR_2:U1.J
 Pi <= AND_2:U2.G
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage3:10:U3|AND_2:U0
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage3:10:U3|AND_2:U0
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage3:10:U3|OR_2:U1
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage3:10:U3|OR_2:U1
 H => J.IN0
 I => J.IN1
 J <= J.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage3:10:U3|AND_2:U2
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage3:10:U3|AND_2:U2
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage3:11:U3
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage3:11:U3
 g1 => AND_2:U0.F
 p1 => AND_2:U2.F
 g2 => OR_2:U1.H
@@ -3169,25 +3204,25 @@ Gi <= OR_2:U1.J
 Pi <= AND_2:U2.G
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage3:11:U3|AND_2:U0
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage3:11:U3|AND_2:U0
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage3:11:U3|OR_2:U1
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage3:11:U3|OR_2:U1
 H => J.IN0
 I => J.IN1
 J <= J.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage3:11:U3|AND_2:U2
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage3:11:U3|AND_2:U2
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage4:0:U4
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage4:0:U4
 g1 => AND_2:U0.F
 p1 => AND_2:U2.F
 g2 => OR_2:U1.H
@@ -3197,25 +3232,25 @@ Gi <= OR_2:U1.J
 Pi <= AND_2:U2.G
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage4:0:U4|AND_2:U0
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage4:0:U4|AND_2:U0
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage4:0:U4|OR_2:U1
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage4:0:U4|OR_2:U1
 H => J.IN0
 I => J.IN1
 J <= J.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage4:0:U4|AND_2:U2
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage4:0:U4|AND_2:U2
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage4:1:U4
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage4:1:U4
 g1 => AND_2:U0.F
 p1 => AND_2:U2.F
 g2 => OR_2:U1.H
@@ -3225,25 +3260,25 @@ Gi <= OR_2:U1.J
 Pi <= AND_2:U2.G
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage4:1:U4|AND_2:U0
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage4:1:U4|AND_2:U0
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage4:1:U4|OR_2:U1
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage4:1:U4|OR_2:U1
 H => J.IN0
 I => J.IN1
 J <= J.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage4:1:U4|AND_2:U2
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage4:1:U4|AND_2:U2
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage4:2:U4
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage4:2:U4
 g1 => AND_2:U0.F
 p1 => AND_2:U2.F
 g2 => OR_2:U1.H
@@ -3253,25 +3288,25 @@ Gi <= OR_2:U1.J
 Pi <= AND_2:U2.G
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage4:2:U4|AND_2:U0
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage4:2:U4|AND_2:U0
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage4:2:U4|OR_2:U1
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage4:2:U4|OR_2:U1
 H => J.IN0
 I => J.IN1
 J <= J.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage4:2:U4|AND_2:U2
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage4:2:U4|AND_2:U2
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage4:3:U4
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage4:3:U4
 g1 => AND_2:U0.F
 p1 => AND_2:U2.F
 g2 => OR_2:U1.H
@@ -3281,25 +3316,25 @@ Gi <= OR_2:U1.J
 Pi <= AND_2:U2.G
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage4:3:U4|AND_2:U0
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage4:3:U4|AND_2:U0
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage4:3:U4|OR_2:U1
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage4:3:U4|OR_2:U1
 H => J.IN0
 I => J.IN1
 J <= J.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage4:3:U4|AND_2:U2
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage4:3:U4|AND_2:U2
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage4:4:U4
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage4:4:U4
 g1 => AND_2:U0.F
 p1 => AND_2:U2.F
 g2 => OR_2:U1.H
@@ -3309,25 +3344,25 @@ Gi <= OR_2:U1.J
 Pi <= AND_2:U2.G
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage4:4:U4|AND_2:U0
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage4:4:U4|AND_2:U0
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage4:4:U4|OR_2:U1
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage4:4:U4|OR_2:U1
 H => J.IN0
 I => J.IN1
 J <= J.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage4:4:U4|AND_2:U2
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage4:4:U4|AND_2:U2
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage4:5:U4
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage4:5:U4
 g1 => AND_2:U0.F
 p1 => AND_2:U2.F
 g2 => OR_2:U1.H
@@ -3337,25 +3372,25 @@ Gi <= OR_2:U1.J
 Pi <= AND_2:U2.G
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage4:5:U4|AND_2:U0
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage4:5:U4|AND_2:U0
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage4:5:U4|OR_2:U1
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage4:5:U4|OR_2:U1
 H => J.IN0
 I => J.IN1
 J <= J.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage4:5:U4|AND_2:U2
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage4:5:U4|AND_2:U2
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage4:6:U4
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage4:6:U4
 g1 => AND_2:U0.F
 p1 => AND_2:U2.F
 g2 => OR_2:U1.H
@@ -3365,25 +3400,25 @@ Gi <= OR_2:U1.J
 Pi <= AND_2:U2.G
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage4:6:U4|AND_2:U0
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage4:6:U4|AND_2:U0
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage4:6:U4|OR_2:U1
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage4:6:U4|OR_2:U1
 H => J.IN0
 I => J.IN1
 J <= J.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage4:6:U4|AND_2:U2
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage4:6:U4|AND_2:U2
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage4:7:U4
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage4:7:U4
 g1 => AND_2:U0.F
 p1 => AND_2:U2.F
 g2 => OR_2:U1.H
@@ -3393,19 +3428,19 @@ Gi <= OR_2:U1.J
 Pi <= AND_2:U2.G
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage4:7:U4|AND_2:U0
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage4:7:U4|AND_2:U0
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage4:7:U4|OR_2:U1
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage4:7:U4|OR_2:U1
 H => J.IN0
 I => J.IN1
 J <= J.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F1|node_op:\stage4:7:U4|AND_2:U2
+|ALU|subtractor:F2|twos_complement:F1|KS_ADDER:F2|node_op:\stage4:7:U4|AND_2:U2
 E => G.IN0
 F => G.IN1
 G <= G.DB_MAX_OUTPUT_PORT_TYPE

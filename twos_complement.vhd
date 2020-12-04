@@ -13,10 +13,16 @@ component KS_ADDER
 	A     : out bit_vector(15 downto 0);
 	C_out		: out bit
 	);
-end component;	
+end component;
+component ones_complement
+port (
+	I0 : in bit_vector(15 downto 0);
+	O   : out bit_vector(15 downto 0)	
+);
+end component;
 	signal temp: bit_vector(15 downto 0);
 	begin 
-	temp<= not I0;
-	F1: KS_ADDER port map(I0=>temp,I1=>"0000000000000001",C_in=>'0',A=>A);
+	F1: ones_complement port map(I0=>I0,O=>temp);
+	F2: KS_ADDER port map(I0=>temp,I1=>"0000000000000001",C_in=>'0',A=>A);
 end calc;
 	

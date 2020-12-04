@@ -1,8 +1,8 @@
 entity KS_ADDER is 
 port(
-	I0,I1 : in bit_vector(0 to 15);
+	I0,I1 : in bit_vector(15 downto 0);
 	C_in	:	in bit;
-	A     : out bit_vector(0 to 15);
+	A     : out bit_vector(15 downto 0);
 	C_out		: out bit
 	);
 end entity;	
@@ -22,8 +22,8 @@ component node_op
 	);
 	end component;
 	
-	signal g_in,p_in,g_1,p_1,g_2,p_2,g_3,p_3,g_4,p_4,sum,temp : bit_vector(0 to 15);
-	signal carry: bit_vector(0 to 16);
+	signal g_in,p_in,g_1,p_1,g_2,p_2,g_3,p_3,g_4,p_4,sum,temp : bit_vector(15 downto 0);
+	signal carry: bit_vector(16 downto 0);
 	
 	
 begin
@@ -68,7 +68,7 @@ end generate pass2;
 
 
 stage3 : for i in 0 to 11 generate
-U3: node_op port map (g1=>g_2(i),p1=>p_2(i),g2=>g_2(i+2),p2=>p_2(i+2),Gi=>g_3(i+4),Pi=>p_3(i+4));
+U3: node_op port map (g1=>g_2(i),p1=>p_2(i),g2=>g_2(i+4),p2=>p_2(i+4),Gi=>g_3(i+4),Pi=>p_3(i+4));
 end generate stage3;
 
 pass3: for j in 0 to 7 generate
@@ -80,7 +80,7 @@ end generate pass3;
 
 
 stage4 : for i in 0 to 7 generate
-U4: node_op port map (g1=>g_3(i),p1=>p_3(i),g2=>g_3(i+4),p2=>p_3(i+4),Gi=>g_4(i+8),Pi=>p_4(i+8));
+U4: node_op port map (g1=>g_3(i),p1=>p_3(i),g2=>g_3(i+8),p2=>p_3(i+8),Gi=>g_4(i+8),Pi=>p_4(i+8));
 end generate stage4;
 
 --prefix computation end

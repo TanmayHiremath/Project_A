@@ -1,7 +1,7 @@
 entity XOR1 is 
 port (
-	D0,D1 : in bit_vector(0 to 15);
-	A      : out bit_vector(0 to 15) --output vector
+	D0,D1 : in bit_vector(15 downto 0);
+	A      : out bit_vector(15 downto 0) --output vector
 	);
 end entity XOR1;
 

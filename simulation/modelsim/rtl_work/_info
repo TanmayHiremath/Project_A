@@ -8,34 +8,34 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dD:/Project_A/simulation/modelsim
+Z0 d/home/captain/Project_A/simulation/modelsim
 Ealu
-Z1 w1607085886
+Z1 w1607090282
 !i122 0
 R0
-Z2 8D:/Project_A/ALU.vhd
-Z3 FD:/Project_A/ALU.vhd
+Z2 8/home/captain/Project_A/ALU.vhd
+Z3 F/home/captain/Project_A/ALU.vhd
 l0
 L2 1
-VF9Wcg`HDL04=9E2?a:C>b0
-!s100 V7]Y3WA9eDEhRkRQoFoJU3
+V?cf5:DA`7Zk^BbaP`?jMg1
+!s100 k33ZgU2cPO7`H1^`?iC0R2
 Z4 OV;C;2020.1;71
 31
-Z5 !s110 1607086542
+Z5 !s110 1607097595
 !i10b 1
-Z6 !s108 1607086542.000000
-Z7 !s90 -reportprogress|300|-93|-work|work|D:/Project_A/ALU.vhd|
-Z8 !s107 D:/Project_A/ALU.vhd|
+Z6 !s108 1607097595.000000
+Z7 !s90 -reportprogress|300|-93|-work|work|/home/captain/Project_A/ALU.vhd|
+Z8 !s107 /home/captain/Project_A/ALU.vhd|
 !i113 1
 Z9 o-93 -work work
 Z10 tExplicit 1 CvgOpt 0
 Astructure
-DEx4 work 3 alu 0 22 F9Wcg`HDL04=9E2?a:C>b0
+DEx4 work 3 alu 0 22 ?cf5:DA`7Zk^BbaP`?jMg1
 !i122 0
 l47
 L12 59
-V44=:iF9]NOWN>DAa<6NKG0
-!s100 1FhHf<PKXKjhmV:c05F_N0
+V;bX>`BnZ>3@hPfZ@]Hj:f0
+!s100 T3QV6?Tg1DfX86``7nN690
 R4
 31
 R5
@@ -47,22 +47,22 @@ R8
 R9
 R10
 Eand_2
-Z11 w1607035243
+Z11 w1607087717
 !i122 6
 R0
-Z12 8D:/Project_A/and_2.vhd
-Z13 FD:/Project_A/and_2.vhd
+Z12 8/home/captain/Project_A/AND_2.vhd
+Z13 F/home/captain/Project_A/AND_2.vhd
 l0
 L1 1
 VlGE]J=ceeejag0;Uj02Ni2
 !s100 T_^:YM5lTlMReRC@GKMZ21
 R4
 31
-R5
+Z14 !s110 1607097596
 !i10b 1
-R6
-Z14 !s90 -reportprogress|300|-93|-work|work|D:/Project_A/and_2.vhd|
-Z15 !s107 D:/Project_A/and_2.vhd|
+Z15 !s108 1607097596.000000
+Z16 !s90 -reportprogress|300|-93|-work|work|/home/captain/Project_A/AND_2.vhd|
+Z17 !s107 /home/captain/Project_A/AND_2.vhd|
 !i113 1
 R9
 R10
@@ -75,31 +75,31 @@ VDWRL8:Go`XZG=m6b7TlNo1
 !s100 Hic4WTi5>5I@5JJP[^9@Y0
 R4
 31
-R5
-!i10b 1
-R6
 R14
+!i10b 1
 R15
+R16
+R17
 !i113 1
 R9
 R10
 Egp_cal
-Z16 w1607008524
+R11
 !i122 3
 R0
-Z17 8D:/Project_A/gp_cal.vhd
-Z18 FD:/Project_A/gp_cal.vhd
+Z18 8/home/captain/Project_A/gp_cal.vhd
+Z19 F/home/captain/Project_A/gp_cal.vhd
 l0
 L1 1
 VG>4z9DVdo>EQSZo6m8zog1
 !s100 5HlD_XgNU`jf6Co:Udj0W1
 R4
 31
-R5
+R14
 !i10b 1
-R6
-Z19 !s90 -reportprogress|300|-93|-work|work|D:/Project_A/gp_cal.vhd|
-Z20 !s107 D:/Project_A/gp_cal.vhd|
+R15
+Z20 !s90 -reportprogress|300|-93|-work|work|/home/captain/Project_A/gp_cal.vhd|
+Z21 !s107 /home/captain/Project_A/gp_cal.vhd|
 !i113 1
 R9
 R10
@@ -112,85 +112,85 @@ VOe9Qf9l`AMFGfNQi@dI4f3
 !s100 ;IbG_NHmMT91_Ge;Xnk?<2
 R4
 31
-R5
+R14
 !i10b 1
-R6
-R19
+R15
 R20
+R21
 !i113 1
 R9
 R10
 Eks_adder
-R11
+Z22 w1607097211
 !i122 5
 R0
-Z21 8D:/Project_A/KS_ADDER.vhd
-Z22 FD:/Project_A/KS_ADDER.vhd
+Z23 8/home/captain/Project_A/KS_ADDER.vhd
+Z24 F/home/captain/Project_A/KS_ADDER.vhd
 l0
 L1 1
-V^2h_GT4z`1YHDI3h]C1oA0
-!s100 ;2ham2FWbRDnV=UK^Udbl0
+Vfo=LgAf:e=BdKo5VeL9Hb3
+!s100 ^HWaCDXQgS92U`0bfmle50
 R4
 31
-R5
+R14
 !i10b 1
-R6
-Z23 !s90 -reportprogress|300|-93|-work|work|D:/Project_A/KS_ADDER.vhd|
-Z24 !s107 D:/Project_A/KS_ADDER.vhd|
+R15
+Z25 !s90 -reportprogress|300|-93|-work|work|/home/captain/Project_A/KS_ADDER.vhd|
+Z26 !s107 /home/captain/Project_A/KS_ADDER.vhd|
 !i113 1
 R9
 R10
 Acalc
-DEx4 work 8 ks_adder 0 22 ^2h_GT4z`1YHDI3h]C1oA0
+DEx4 work 8 ks_adder 0 22 fo=LgAf:e=BdKo5VeL9Hb3
 !i122 5
 l29
 L9 88
-V6LmbzMflI;]ED^6]iOTSV1
-!s100 U:;a:lP>`PGTozf<UQ;`i3
+V7=l>b2_@ZjFEgW[9nU@7;0
+!s100 N7c:`@ihS3?TA?M1Zi;6P1
 R4
 31
-R5
+R14
 !i10b 1
-R6
-R23
-R24
+R15
+R25
+R26
 !i113 1
 R9
 R10
 Enand1
-R11
+Z27 w1607088869
 !i122 10
 R0
-Z25 8D:/Project_A/nand1.vhd
-Z26 FD:/Project_A/nand1.vhd
+Z28 8/home/captain/Project_A/NAND1.vhd
+Z29 F/home/captain/Project_A/NAND1.vhd
 l0
 L1 1
-VoiKRBIVAiYW8=PF<1@=l[0
-!s100 ]ZC6C0MA4WQ`^R@hm5?zl2
+VJT01dgEXJ]I^9U@mmf=eR0
+!s100 1g]K=K2AQC[[?`YC@jB<P2
 R4
 31
-Z27 !s110 1607086543
+R14
 !i10b 1
-Z28 !s108 1607086543.000000
-Z29 !s90 -reportprogress|300|-93|-work|work|D:/Project_A/nand1.vhd|
-Z30 !s107 D:/Project_A/nand1.vhd|
+R15
+Z30 !s90 -reportprogress|300|-93|-work|work|/home/captain/Project_A/NAND1.vhd|
+Z31 !s107 /home/captain/Project_A/NAND1.vhd|
 !i113 1
 R9
 R10
 Aplan
-DEx4 work 5 nand1 0 22 oiKRBIVAiYW8=PF<1@=l[0
+DEx4 work 5 nand1 0 22 JT01dgEXJ]I^9U@mmf=eR0
 !i122 10
 l17
 L8 15
-Voe8<QX`oK7fbFXQPb^HMP3
-!s100 <1ck4^_<bcd@UlEV^h1[o1
+VRIK32=GJ;K=I:h94iNR320
+!s100 VQY2m]A0;X^S4ab?0o`XT3
 R4
 31
-R27
+R14
 !i10b 1
-R28
-R29
+R15
 R30
+R31
 !i113 1
 R9
 R10
@@ -198,19 +198,19 @@ Enode_op
 R11
 !i122 4
 R0
-Z31 8D:/Project_A/node_op.vhd
-Z32 FD:/Project_A/node_op.vhd
+Z32 8/home/captain/Project_A/node_op.vhd
+Z33 F/home/captain/Project_A/node_op.vhd
 l0
 L1 1
 Vn:kZ7EgSTOHU:8;0hVFIJ3
 !s100 ]hReOVI[z_aid4X<Bc0Je0
 R4
 31
-R5
+R14
 !i10b 1
-R6
-Z33 !s90 -reportprogress|300|-93|-work|work|D:/Project_A/node_op.vhd|
-Z34 !s107 D:/Project_A/node_op.vhd|
+R15
+Z34 !s90 -reportprogress|300|-93|-work|work|/home/captain/Project_A/node_op.vhd|
+Z35 !s107 /home/captain/Project_A/node_op.vhd|
 !i113 1
 R9
 R10
@@ -223,11 +223,11 @@ VEezY@9?dX0WkJ0:KU=ERi2
 !s100 IK07>Uh<^jG:S4dZ7XX_K0
 R4
 31
-R5
+R14
 !i10b 1
-R6
-R33
+R15
 R34
+R35
 !i113 1
 R9
 R10
@@ -235,19 +235,19 @@ Eor_2
 R11
 !i122 7
 R0
-Z35 8D:/Project_A/or_2.vhd
-Z36 FD:/Project_A/or_2.vhd
+Z36 8/home/captain/Project_A/OR_2.vhd
+Z37 F/home/captain/Project_A/OR_2.vhd
 l0
 L1 1
 VhZJdAa?8AeLL8SA]S;Pb[2
 !s100 jkL7K5cG@ie?Vh^eEUY`h1
 R4
 31
-R5
+R14
 !i10b 1
-R6
-Z37 !s90 -reportprogress|300|-93|-work|work|D:/Project_A/or_2.vhd|
-Z38 !s107 D:/Project_A/or_2.vhd|
+R15
+Z38 !s90 -reportprogress|300|-93|-work|work|/home/captain/Project_A/OR_2.vhd|
+Z39 !s107 /home/captain/Project_A/OR_2.vhd|
 !i113 1
 R9
 R10
@@ -260,68 +260,68 @@ VV^BZ<m3o3Y6d8ANzFXCe]2
 !s100 31`9RjFTMGemXh@gE77;_1
 R4
 31
-R5
+R14
 !i10b 1
-R6
-R37
+R15
 R38
+R39
 !i113 1
 R9
 R10
 Esubtractor
-R11
+Z40 w1607097554
 !i122 8
 R0
-Z39 8D:/Project_A/subtractor.vhd
-Z40 FD:/Project_A/subtractor.vhd
+Z41 8/home/captain/Project_A/subtractor.vhd
+Z42 F/home/captain/Project_A/subtractor.vhd
 l0
 L1 1
-V_]hg0YNY:I0LnNKh2Kg;N2
-!s100 dUBn[kVU@L?01P[Jl:k5b0
+V922a`5f`:zeKQadU_^2K81
+!s100 9lEPW9?5W@`TABN_U`=O[1
 R4
 31
-R5
+R14
 !i10b 1
-R6
-Z41 !s90 -reportprogress|300|-93|-work|work|D:/Project_A/subtractor.vhd|
-Z42 !s107 D:/Project_A/subtractor.vhd|
+R15
+Z43 !s90 -reportprogress|300|-93|-work|work|/home/captain/Project_A/subtractor.vhd|
+Z44 !s107 /home/captain/Project_A/subtractor.vhd|
 !i113 1
 R9
 R10
 Acalc
-DEx4 work 10 subtractor 0 22 _]hg0YNY:I0LnNKh2Kg;N2
+DEx4 work 10 subtractor 0 22 922a`5f`:zeKQadU_^2K81
 !i122 8
 l26
 L8 22
-V>8455b;HGiHi><MXi4^DG0
-!s100 cidPT<Q`olR]@3bNf_MPE0
+V4Y3C70e@MLYlQMg=jA8eI0
+!s100 HAQPkISZ^e]WD<8iQ?:9i0
 R4
 31
-R5
+R14
 !i10b 1
-R6
-R41
-R42
+R15
+R43
+R44
 !i113 1
 R9
 R10
 Etestbench
-Z43 w1607086431
+Z45 w1607088905
 !i122 11
 R0
-Z44 8D:/Project_A/Testbench.vhd
-Z45 FD:/Project_A/Testbench.vhd
+Z46 8/home/captain/Project_A/Testbench.vhd
+Z47 F/home/captain/Project_A/Testbench.vhd
 l0
 L1 1
 V36Gc6G@ASRCSi7f_R`_713
 !s100 >BU<4YYmnD[Q1?DJnPbUL0
 R4
 31
-R27
+R14
 !i10b 1
-R28
-Z46 !s90 -reportprogress|300|-93|-work|work|D:/Project_A/Testbench.vhd|
-!s107 D:/Project_A/Testbench.vhd|
+R15
+Z48 !s90 -reportprogress|300|-93|-work|work|/home/captain/Project_A/Testbench.vhd|
+!s107 /home/captain/Project_A/Testbench.vhd|
 !i113 1
 R9
 R10
@@ -330,77 +330,77 @@ DEx4 work 9 testbench 0 22 36Gc6G@ASRCSi7f_R`_713
 !i122 11
 l20
 L4 364
-VUKJ_7S;:8=Jo]0nZd`EYa1
-!s100 LeQP<2RL=>lH?fOYik<]f0
+V;0`:JModj_@KB;MlYj3`i1
+!s100 `ENAPCzfDz`Rzfkm2llGg3
 R4
 31
-R27
+R14
 !i10b 1
-R28
-R46
-Z47 !s107 D:/Project_A/Testbench.vhd|
+R15
+R48
+Z49 !s107 /home/captain/Project_A/Testbench.vhd|
 !i113 1
 R9
 R10
 Etwos_complement
-R11
+Z50 w1607089096
 !i122 9
 R0
-Z48 8D:/Project_A/twos_complement.vhd
-Z49 FD:/Project_A/twos_complement.vhd
+Z51 8/home/captain/Project_A/twos_complement.vhd
+Z52 F/home/captain/Project_A/twos_complement.vhd
 l0
 L1 1
-VYD@54VgOf3QjDDbX;hNQn2
-!s100 6BN66OF;e1E[Z[L2M2[MI2
+VG=ZTeMzgY7dh532icU[7E0
+!s100 8IBQVS[_RN`8A^YRHoAU02
 R4
 31
-R27
+R14
 !i10b 1
-R28
-Z50 !s90 -reportprogress|300|-93|-work|work|D:/Project_A/twos_complement.vhd|
-Z51 !s107 D:/Project_A/twos_complement.vhd|
+R15
+Z53 !s90 -reportprogress|300|-93|-work|work|/home/captain/Project_A/twos_complement.vhd|
+Z54 !s107 /home/captain/Project_A/twos_complement.vhd|
 !i113 1
 R9
 R10
 Acalc
-DEx4 work 15 twos_complement 0 22 YD@54VgOf3QjDDbX;hNQn2
+DEx4 work 15 twos_complement 0 22 G=ZTeMzgY7dh532icU[7E0
 !i122 9
 l18
 L8 14
-VaMJTmJYPVMc5Dc=M41OlI3
-!s100 beXBC:?P>0AihF0DLl4[n3
+V6^;3RY1zQ6z^a8F_:R9HD2
+!s100 gZTOGM0_@TAcO>BgaFz`z2
 R4
 31
-R27
+R14
 !i10b 1
-R28
-R50
-R51
+R15
+R53
+R54
 !i113 1
 R9
 R10
 Exor1
-R11
+Z55 w1607088825
 !i122 2
 R0
-Z52 8D:/Project_A/XOR1.vhd
-Z53 FD:/Project_A/XOR1.vhd
+Z56 8/home/captain/Project_A/XOR1.vhd
+Z57 F/home/captain/Project_A/XOR1.vhd
 l0
 L1 1
-V1QVioV;XGbedg6Og]6AIA1
-!s100 :_nVQ3=A57IQ1QCjj@ZCY1
+V:0m6]Do=R_kiM6Njk999i2
+!s100 W0<k;ffT;=Djjc]jFnXH=3
 R4
 31
-R5
+R14
 !i10b 1
-R6
-Z54 !s90 -reportprogress|300|-93|-work|work|D:/Project_A/XOR1.vhd|
-Z55 !s107 D:/Project_A/XOR1.vhd|
+R15
+Z58 !s90 -reportprogress|300|-93|-work|work|/home/captain/Project_A/XOR1.vhd|
+Z59 !s107 /home/captain/Project_A/XOR1.vhd|
 !i113 1
 R9
 R10
 Aplan
-DEx4 work 4 xor1 0 22 1QVioV;XGbedg6Og]6AIA1
+DEx4 work 4 xor1 0 22 :0m6]Do=R_kiM6Njk999i2
 !i122 2
 l16
 L8 16
@@ -408,31 +408,31 @@ VSIaGlbOdn5QOnnYjIicnB0
 !s100 7Vb]cdgDZkB]QHARnYJVi2
 R4
 31
-R5
+R14
 !i10b 1
-R6
-R54
-R55
+R15
+R58
+R59
 !i113 1
 R9
 R10
 Exor2
-Z56 w1607007043
+R11
 !i122 1
 R0
-Z57 8D:/Project_A/XOR2.vhd
-Z58 FD:/Project_A/XOR2.vhd
+Z60 8/home/captain/Project_A/XOR2.vhd
+Z61 F/home/captain/Project_A/XOR2.vhd
 l0
 L1 1
 V80mS=2EMjT41Fg>g5ERDW1
 !s100 ;e:f948a9_;X@?f`?WTGF0
 R4
 31
-R5
+R14
 !i10b 1
 R6
-Z59 !s90 -reportprogress|300|-93|-work|work|D:/Project_A/XOR2.vhd|
-Z60 !s107 D:/Project_A/XOR2.vhd|
+Z62 !s90 -reportprogress|300|-93|-work|work|/home/captain/Project_A/XOR2.vhd|
+Z63 !s107 /home/captain/Project_A/XOR2.vhd|
 !i113 1
 R9
 R10
@@ -445,11 +445,11 @@ V:Zn536E`f?d6go>1;D_H<0
 !s100 YVCQ68:7<:i>c``^I708J2
 R4
 31
-R5
+R14
 !i10b 1
 R6
-R59
-R60
+R62
+R63
 !i113 1
 R9
 R10

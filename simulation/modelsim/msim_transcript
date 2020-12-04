@@ -1,4 +1,3 @@
-# Reading pref.tcl
 # do ALU_run_msim_rtl_vhdl.do
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
@@ -7,127 +6,143 @@
 # vmap work rtl_work
 # Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
 # vmap work rtl_work 
-# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Copying /home/captain/intelFPGA_lite/20.1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vcom -93 -work work {D:/Project_A/ALU.vhd}
+# vcom -93 -work work {/home/captain/Project_A/ALU.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:25:42 on Dec 04,2020
-# vcom -reportprogress 300 -93 -work work D:/Project_A/ALU.vhd 
+# Start time: 21:29:55 on Dec 04,2020
+# vcom -reportprogress 300 -93 -work work /home/captain/Project_A/ALU.vhd 
 # -- Loading package STANDARD
 # -- Compiling entity ALU
 # -- Compiling architecture structure of ALU
-# End time: 18:25:42 on Dec 04,2020, Elapsed time: 0:00:00
+# End time: 21:29:55 on Dec 04,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {D:/Project_A/XOR2.vhd}
+# vcom -93 -work work {/home/captain/Project_A/XOR2.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:25:42 on Dec 04,2020
-# vcom -reportprogress 300 -93 -work work D:/Project_A/XOR2.vhd 
+# Start time: 21:29:55 on Dec 04,2020
+# vcom -reportprogress 300 -93 -work work /home/captain/Project_A/XOR2.vhd 
 # -- Loading package STANDARD
 # -- Compiling entity XOR2
 # -- Compiling architecture struct of XOR2
-# End time: 18:25:42 on Dec 04,2020, Elapsed time: 0:00:00
+# End time: 21:29:56 on Dec 04,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {D:/Project_A/XOR1.vhd}
+# vcom -93 -work work {/home/captain/Project_A/XOR1.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:25:42 on Dec 04,2020
-# vcom -reportprogress 300 -93 -work work D:/Project_A/XOR1.vhd 
+# Start time: 21:29:56 on Dec 04,2020
+# vcom -reportprogress 300 -93 -work work /home/captain/Project_A/XOR1.vhd 
 # -- Loading package STANDARD
 # -- Compiling entity XOR1
 # -- Compiling architecture plan of XOR1
-# End time: 18:25:42 on Dec 04,2020, Elapsed time: 0:00:00
+# End time: 21:29:56 on Dec 04,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {D:/Project_A/gp_cal.vhd}
+# vcom -93 -work work {/home/captain/Project_A/gp_cal.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:25:42 on Dec 04,2020
-# vcom -reportprogress 300 -93 -work work D:/Project_A/gp_cal.vhd 
+# Start time: 21:29:56 on Dec 04,2020
+# vcom -reportprogress 300 -93 -work work /home/captain/Project_A/gp_cal.vhd 
 # -- Loading package STANDARD
 # -- Compiling entity gp_cal
 # -- Compiling architecture struct of gp_cal
-# End time: 18:25:42 on Dec 04,2020, Elapsed time: 0:00:00
+# End time: 21:29:56 on Dec 04,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {D:/Project_A/node_op.vhd}
+# vcom -93 -work work {/home/captain/Project_A/node_op.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:25:42 on Dec 04,2020
-# vcom -reportprogress 300 -93 -work work D:/Project_A/node_op.vhd 
+# Start time: 21:29:56 on Dec 04,2020
+# vcom -reportprogress 300 -93 -work work /home/captain/Project_A/node_op.vhd 
 # -- Loading package STANDARD
 # -- Compiling entity node_op
 # -- Compiling architecture struct of node_op
-# End time: 18:25:42 on Dec 04,2020, Elapsed time: 0:00:00
+# End time: 21:29:56 on Dec 04,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {D:/Project_A/KS_ADDER.vhd}
+# vcom -93 -work work {/home/captain/Project_A/KS_ADDER.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:25:42 on Dec 04,2020
-# vcom -reportprogress 300 -93 -work work D:/Project_A/KS_ADDER.vhd 
+# Start time: 21:29:56 on Dec 04,2020
+# vcom -reportprogress 300 -93 -work work /home/captain/Project_A/KS_ADDER.vhd 
 # -- Loading package STANDARD
 # -- Compiling entity KS_ADDER
 # -- Compiling architecture calc of KS_ADDER
-# End time: 18:25:42 on Dec 04,2020, Elapsed time: 0:00:00
+# End time: 21:29:56 on Dec 04,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {D:/Project_A/and_2.vhd}
+# vcom -93 -work work {/home/captain/Project_A/AND_2.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:25:42 on Dec 04,2020
-# vcom -reportprogress 300 -93 -work work D:/Project_A/and_2.vhd 
+# Start time: 21:29:56 on Dec 04,2020
+# vcom -reportprogress 300 -93 -work work /home/captain/Project_A/AND_2.vhd 
 # -- Loading package STANDARD
 # -- Compiling entity AND_2
 # -- Compiling architecture struct of AND_2
-# End time: 18:25:42 on Dec 04,2020, Elapsed time: 0:00:00
+# End time: 21:29:56 on Dec 04,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {D:/Project_A/or_2.vhd}
+# vcom -93 -work work {/home/captain/Project_A/OR_2.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:25:42 on Dec 04,2020
-# vcom -reportprogress 300 -93 -work work D:/Project_A/or_2.vhd 
+# Start time: 21:29:56 on Dec 04,2020
+# vcom -reportprogress 300 -93 -work work /home/captain/Project_A/OR_2.vhd 
 # -- Loading package STANDARD
 # -- Compiling entity OR_2
 # -- Compiling architecture struct of OR_2
-# End time: 18:25:42 on Dec 04,2020, Elapsed time: 0:00:00
+# End time: 21:29:56 on Dec 04,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {D:/Project_A/subtractor.vhd}
+# vcom -93 -work work {/home/captain/Project_A/subtractor.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:25:42 on Dec 04,2020
-# vcom -reportprogress 300 -93 -work work D:/Project_A/subtractor.vhd 
+# Start time: 21:29:56 on Dec 04,2020
+# vcom -reportprogress 300 -93 -work work /home/captain/Project_A/subtractor.vhd 
 # -- Loading package STANDARD
 # -- Compiling entity subtractor
 # -- Compiling architecture calc of subtractor
-# End time: 18:25:42 on Dec 04,2020, Elapsed time: 0:00:00
+# End time: 21:29:56 on Dec 04,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {D:/Project_A/twos_complement.vhd}
+# vcom -93 -work work {/home/captain/Project_A/twos_complement.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:25:43 on Dec 04,2020
-# vcom -reportprogress 300 -93 -work work D:/Project_A/twos_complement.vhd 
+# Start time: 21:29:56 on Dec 04,2020
+# vcom -reportprogress 300 -93 -work work /home/captain/Project_A/twos_complement.vhd 
 # -- Loading package STANDARD
 # -- Compiling entity twos_complement
 # -- Compiling architecture calc of twos_complement
-# End time: 18:25:43 on Dec 04,2020, Elapsed time: 0:00:00
+# End time: 21:29:56 on Dec 04,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {D:/Project_A/nand1.vhd}
+# vcom -93 -work work {/home/captain/Project_A/NAND1.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:25:43 on Dec 04,2020
-# vcom -reportprogress 300 -93 -work work D:/Project_A/nand1.vhd 
+# Start time: 21:29:56 on Dec 04,2020
+# vcom -reportprogress 300 -93 -work work /home/captain/Project_A/NAND1.vhd 
 # -- Loading package STANDARD
 # -- Compiling entity NAND1
 # -- Compiling architecture plan of NAND1
-# End time: 18:25:43 on Dec 04,2020, Elapsed time: 0:00:00
+# End time: 21:29:56 on Dec 04,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vcom -93 -work work {D:/Project_A/Testbench.vhd}
+# vcom -93 -work work {/home/captain/Project_A/Testbench.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:25:43 on Dec 04,2020
-# vcom -reportprogress 300 -93 -work work D:/Project_A/Testbench.vhd 
+# Start time: 21:29:56 on Dec 04,2020
+# vcom -reportprogress 300 -93 -work work /home/captain/Project_A/Testbench.vhd 
 # -- Loading package STANDARD
 # -- Compiling entity Testbench
 # -- Compiling architecture tb of Testbench
-# End time: 18:25:43 on Dec 04,2020, Elapsed time: 0:00:00
+# End time: 21:29:56 on Dec 04,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L maxv -L rtl_work -L work -voptargs="+acc"  Testbench.
-# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L maxv -L rtl_work -L work -voptargs=""+acc"" Testbench. 
-# Start time: 18:25:43 on Dec 04,2020
-# ** Error (suppressible): (vsim-19) Failed to access library 'Testbench' at "Testbench".
-# No such file or directory. (errno = ENOENT)
-# Error loading design
-# Error: Error loading design
-#        Pausing macro execution
-# MACRO ./ALU_run_msim_rtl_vhdl.do PAUSED at line 22
-# End time: 18:26:45 on Dec 04,2020, Elapsed time: 0:01:02
-# Errors: 1, Warnings: 0
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L maxv -L rtl_work -L work -voptargs="+acc"  Testbench
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L maxv -L rtl_work -L work -voptargs=""+acc"" Testbench 
+# Start time: 21:29:56 on Dec 04,2020
+# Loading std.standard
+# Loading work.testbench(tb)
+# Loading work.alu(structure)
+# Loading work.ks_adder(calc)
+# Loading work.gp_cal(struct)
+# Loading work.node_op(struct)
+# Loading work.and_2(struct)
+# Loading work.or_2(struct)
+# Loading work.subtractor(calc)
+# Loading work.twos_complement(calc)
+# Loading work.xor1(plan)
+# Loading work.xor2(struct)
+# Loading work.nand1(plan)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Break key hit
+# Break in Architecture calc at /home/captain/Project_A/KS_ADDER.vhd line 37
+# End time: 22:11:44 on Dec 04,2020, Elapsed time: 0:41:48
+# Errors: 0, Warnings: 0

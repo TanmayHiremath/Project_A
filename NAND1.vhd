@@ -1,7 +1,7 @@
 entity NAND1 is 
 port (
-	D0,D1 : in bit_vector(0 to 15);
-	A      : out bit_vector(0 to 15) --output vector
+	D0,D1 : in bit_vector(15 downto 0);
+	A      : out bit_vector(15 downto 0) --output vector
 	);
 end entity NAND1;
 
@@ -13,7 +13,7 @@ component AND_2
 		G   : out bit
 	);
 	end component;
-	signal temp: bit_vector(0 to 15);
+	signal temp: bit_vector(15 downto 0);
 begin 
 process1 : for i in 0 to 15 generate
 U0:AND_2 port map (E => D0(i), F => D1(i), G=>temp(i) );

@@ -4,16 +4,16 @@ end entity Testbench;
 architecture tb of Testbench is 
 component ALU is 
 port (
-	D0, D1 : in bit_vector(0 to 15); --inputs
+	D0, D1 : in bit_vector(15 downto 0); --inputs
 	
 	S0, S1 : in bit; --control inputs
-	A      : out bit_vector(0 to 15); --output vector
+	A      : out bit_vector(15 downto 0); --output vector
 	C,Z    : out bit --carry bit and zero bit
 );
 end component;
 
-signal P,Q : bit_vector(0 to 15); --inputs
-signal R   : bit_vector(0 to 15); --output
+signal P,Q : bit_vector(15 downto 0); --inputs
+signal R   : bit_vector(15 downto 0); --output
 signal T1,T2 : bit; --control inputs
 signal carry,zero_bit : bit; --carry out and zero bit
 

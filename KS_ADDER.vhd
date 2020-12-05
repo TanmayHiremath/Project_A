@@ -86,7 +86,7 @@ end generate stage4;
 --prefix computation end
 carry(0)<= C_in;
 post_processing : for i in 0 to 15 generate
-carry(i+1)<= g_4(i) or (p_4(i) and carry(0) );
+carry(i+1)<= g_4(i) or (p_4(i) and carry(0));
 sum(i)<= p_4(i) xor carry(i);
 end generate post_processing;
 A<=sum;

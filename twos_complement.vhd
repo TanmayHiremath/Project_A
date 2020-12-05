@@ -23,6 +23,6 @@ end component;
 	signal temp: bit_vector(15 downto 0);
 	begin 
 	F1: ones_complement port map(I0=>I0,O=>temp);
-	F2: KS_ADDER port map(I0=>temp,I1=>"0000000000000001",C_in=>'0',A=>A);
+	F2: KS_ADDER port map(I0=>temp,I1=>"0000000000000000",C_in=>'0',A=>A);
 end calc;
 	

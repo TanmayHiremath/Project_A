@@ -153,6 +153,23 @@ A[14] << out_temp.DB_MAX_OUTPUT_PORT_TYPE
 A[15] << out_temp.DB_MAX_OUTPUT_PORT_TYPE
 C << KS_ADDER:F1.C_out
 Z << random2.DB_MAX_OUTPUT_PORT_TYPE
+Carryo[0] << KS_ADDER:F1.Carryo[0]
+Carryo[1] << KS_ADDER:F1.Carryo[1]
+Carryo[2] << KS_ADDER:F1.Carryo[2]
+Carryo[3] << KS_ADDER:F1.Carryo[3]
+Carryo[4] << KS_ADDER:F1.Carryo[4]
+Carryo[5] << KS_ADDER:F1.Carryo[5]
+Carryo[6] << KS_ADDER:F1.Carryo[6]
+Carryo[7] << KS_ADDER:F1.Carryo[7]
+Carryo[8] << KS_ADDER:F1.Carryo[8]
+Carryo[9] << KS_ADDER:F1.Carryo[9]
+Carryo[10] << KS_ADDER:F1.Carryo[10]
+Carryo[11] << KS_ADDER:F1.Carryo[11]
+Carryo[12] << KS_ADDER:F1.Carryo[12]
+Carryo[13] << KS_ADDER:F1.Carryo[13]
+Carryo[14] << KS_ADDER:F1.Carryo[14]
+Carryo[15] << KS_ADDER:F1.Carryo[15]
+Carryo[16] << KS_ADDER:F1.Carryo[16]
 
 
 |ALU|KS_ADDER:F1
@@ -205,6 +222,7 @@ C_in => carry.IN1
 C_in => carry.IN1
 C_in => carry.IN1
 C_in => carry.IN1
+C_in => Carryo[0].DATAIN
 A[0] <= sum.DB_MAX_OUTPUT_PORT_TYPE
 A[1] <= sum.DB_MAX_OUTPUT_PORT_TYPE
 A[2] <= sum.DB_MAX_OUTPUT_PORT_TYPE
@@ -222,6 +240,23 @@ A[13] <= sum.DB_MAX_OUTPUT_PORT_TYPE
 A[14] <= sum.DB_MAX_OUTPUT_PORT_TYPE
 A[15] <= sum.DB_MAX_OUTPUT_PORT_TYPE
 C_out <= carry.DB_MAX_OUTPUT_PORT_TYPE
+Carryo[0] <= C_in.DB_MAX_OUTPUT_PORT_TYPE
+Carryo[1] <= carry.DB_MAX_OUTPUT_PORT_TYPE
+Carryo[2] <= carry.DB_MAX_OUTPUT_PORT_TYPE
+Carryo[3] <= carry.DB_MAX_OUTPUT_PORT_TYPE
+Carryo[4] <= carry.DB_MAX_OUTPUT_PORT_TYPE
+Carryo[5] <= carry.DB_MAX_OUTPUT_PORT_TYPE
+Carryo[6] <= carry.DB_MAX_OUTPUT_PORT_TYPE
+Carryo[7] <= carry.DB_MAX_OUTPUT_PORT_TYPE
+Carryo[8] <= carry.DB_MAX_OUTPUT_PORT_TYPE
+Carryo[9] <= carry.DB_MAX_OUTPUT_PORT_TYPE
+Carryo[10] <= carry.DB_MAX_OUTPUT_PORT_TYPE
+Carryo[11] <= carry.DB_MAX_OUTPUT_PORT_TYPE
+Carryo[12] <= carry.DB_MAX_OUTPUT_PORT_TYPE
+Carryo[13] <= carry.DB_MAX_OUTPUT_PORT_TYPE
+Carryo[14] <= carry.DB_MAX_OUTPUT_PORT_TYPE
+Carryo[15] <= carry.DB_MAX_OUTPUT_PORT_TYPE
+Carryo[16] <= carry.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |ALU|KS_ADDER:F1|gp_cal:\pre_processing:0:pre
@@ -1876,6 +1911,7 @@ C_in => carry.IN1
 C_in => carry.IN1
 C_in => carry.IN1
 C_in => carry.IN1
+C_in => Carryo[0].DATAIN
 A[0] <= sum.DB_MAX_OUTPUT_PORT_TYPE
 A[1] <= sum.DB_MAX_OUTPUT_PORT_TYPE
 A[2] <= sum.DB_MAX_OUTPUT_PORT_TYPE
@@ -1893,6 +1929,23 @@ A[13] <= sum.DB_MAX_OUTPUT_PORT_TYPE
 A[14] <= sum.DB_MAX_OUTPUT_PORT_TYPE
 A[15] <= sum.DB_MAX_OUTPUT_PORT_TYPE
 C_out <= carry.DB_MAX_OUTPUT_PORT_TYPE
+Carryo[0] <= C_in.DB_MAX_OUTPUT_PORT_TYPE
+Carryo[1] <= carry.DB_MAX_OUTPUT_PORT_TYPE
+Carryo[2] <= carry.DB_MAX_OUTPUT_PORT_TYPE
+Carryo[3] <= carry.DB_MAX_OUTPUT_PORT_TYPE
+Carryo[4] <= carry.DB_MAX_OUTPUT_PORT_TYPE
+Carryo[5] <= carry.DB_MAX_OUTPUT_PORT_TYPE
+Carryo[6] <= carry.DB_MAX_OUTPUT_PORT_TYPE
+Carryo[7] <= carry.DB_MAX_OUTPUT_PORT_TYPE
+Carryo[8] <= carry.DB_MAX_OUTPUT_PORT_TYPE
+Carryo[9] <= carry.DB_MAX_OUTPUT_PORT_TYPE
+Carryo[10] <= carry.DB_MAX_OUTPUT_PORT_TYPE
+Carryo[11] <= carry.DB_MAX_OUTPUT_PORT_TYPE
+Carryo[12] <= carry.DB_MAX_OUTPUT_PORT_TYPE
+Carryo[13] <= carry.DB_MAX_OUTPUT_PORT_TYPE
+Carryo[14] <= carry.DB_MAX_OUTPUT_PORT_TYPE
+Carryo[15] <= carry.DB_MAX_OUTPUT_PORT_TYPE
+Carryo[16] <= carry.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |ALU|subtractor:F2|KS_ADDER:F2|gp_cal:\pre_processing:0:pre

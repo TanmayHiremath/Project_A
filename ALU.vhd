@@ -6,7 +6,8 @@ port (
 	
 	S0, S1 : in bit; --control inputs
 	A      : out bit_vector(15 downto 0); --output vector
-	C,Z    : out bit --carry bit and zero bit
+	C,Z    : out bit; --carry bit and zero bit;
+	Carryo: out bit_vector(16 downto 0)
 );
 end entity ALU;
 
@@ -29,7 +30,8 @@ port(
 	I0,I1 : in bit_vector(15 downto 0);
 	C_in	:	in bit;
 	A     : out bit_vector(15 downto 0);
-	C_out		: out bit
+	C_out		: out bit;
+	Carryo: out bit_vector(16 downto 0)
 	);
 end component;	
 	
@@ -46,7 +48,7 @@ signal out_temp : bit_vector(15 downto 0);
 signal random1,random2 : bit;
 		
 begin
-F1: KS_ADDER port map(I0=>D0,I1=>D1,C_in=>'0',A=>temp1,C_out=>C);
+F1: KS_ADDER port map(I0=>D0,I1=>D1,C_in=>'0',A=>temp1,C_out=>C,Carryo=>Carryo);
 F2: subtractor port map(I0=>D0,I1=>D1,O=>temp2);
 F3: XOR1 port map(D0=>D0,D1=>D1,A=>temp3);
 F4: NAND1 port map(D0=>D0,D1=>D1,A=>temp4);

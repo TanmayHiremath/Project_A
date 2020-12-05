@@ -17,7 +17,8 @@ port(
 	I0,I1 : in bit_vector(15 downto 0);
 	C_in	:	in bit;
 	A     : out bit_vector(15 downto 0);
-	C_out		: out bit
+	C_out		: out bit;
+	Carryo: out bit_vector(16 downto 0)
 	);
 end component;	
 

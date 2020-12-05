@@ -8,7 +8,8 @@ port (
 	
 	S0, S1 : in bit; --control inputs
 	A      : out bit_vector(15 downto 0); --output vector
-	C,Z    : out bit --carry bit and zero bit
+	C,Z    : out bit; --carry bit and zero bit
+	Carryo: out bit_vector(16 downto 0)
 );
 end component;
 
@@ -16,10 +17,11 @@ signal P,Q : bit_vector(15 downto 0); --inputs
 signal R   : bit_vector(15 downto 0); --output
 signal T1,T2 : bit; --control inputs
 signal carry,zero_bit : bit; --carry out and zero bit
+signal Carrytest:	 bit_vector(16 downto 0);
 
 begin
 dut_instance : ALU
-port map (D0 => P, D1 => Q, S0 => T1, S1 => T2,A => R, C => carry, Z => zero_bit );
+port map (D0 => P, D1 => Q, S0 => T1, S1 => T2,A => R, C => carry, Z => zero_bit, Carryo=>Carrytest );
 
 process
 begin

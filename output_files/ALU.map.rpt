@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ALU
-Sat Dec 05 13:42:36 2020
+Sat Dec 05 14:14:51 2020
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -43,13 +43,13 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Sat Dec 05 13:42:36 2020       ;
+; Analysis & Synthesis Status ; Successful - Sat Dec 05 14:14:51 2020       ;
 ; Quartus Prime Version       ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name               ; ALU                                         ;
 ; Top-level Entity Name       ; ALU                                         ;
 ; Family                      ; MAX V                                       ;
 ; Total logic elements        ; 237                                         ;
-; Total pins                  ; 52                                          ;
+; Total pins                  ; 69                                          ;
 ; Total virtual pins          ; 0                                           ;
 ; UFM blocks                  ; 0 / 1 ( 0 % )                               ;
 +-----------------------------+---------------------------------------------+
@@ -172,8 +172,8 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;       ;
 ; Logic element usage by number of LUT inputs ;       ;
 ;     -- 4 input functions                    ; 197   ;
-;     -- 3 input functions                    ; 11    ;
-;     -- 2 input functions                    ; 29    ;
+;     -- 3 input functions                    ; 14    ;
+;     -- 2 input functions                    ; 26    ;
 ;     -- 1 input functions                    ; 0     ;
 ;     -- 0 input functions                    ; 0     ;
 ;                                             ;       ;
@@ -186,11 +186,11 @@ https://fpgasoftware.intel.com/eula.
 ;     -- asynchronous clear/load mode         ; 0     ;
 ;                                             ;       ;
 ; Total registers                             ; 0     ;
-; I/O pins                                    ; 52    ;
+; I/O pins                                    ; 69    ;
 ; Maximum fan-out node                        ; S1    ;
-; Maximum fan-out                             ; 20    ;
-; Total fan-out                               ; 897   ;
-; Average fan-out                             ; 3.10  ;
+; Maximum fan-out                             ; 21    ;
+; Total fan-out                               ; 916   ;
+; Average fan-out                             ; 2.99  ;
 +---------------------------------------------+-------+
 
 
@@ -199,21 +199,19 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------------------------------------------------+-------------+--------------+
 ; Compilation Hierarchy Node               ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                           ; Entity Name ; Library Name ;
 +------------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------------------------------------------------+-------------+--------------+
-; |ALU                                     ; 237 (55)    ; 0            ; 0          ; 52   ; 0            ; 237 (55)     ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU                                                          ; ALU         ; work         ;
-;    |KS_ADDER:F1|                         ; 93 (6)      ; 0            ; 0          ; 0    ; 0            ; 93 (6)       ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|KS_ADDER:F1                                              ; KS_ADDER    ; work         ;
+; |ALU                                     ; 237 (56)    ; 0            ; 0          ; 69   ; 0            ; 237 (56)     ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU                                                          ; ALU         ; work         ;
+;    |KS_ADDER:F1|                         ; 91 (7)      ; 0            ; 0          ; 0    ; 0            ; 91 (7)       ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|KS_ADDER:F1                                              ; KS_ADDER    ; work         ;
 ;       |gp_cal:\pre_processing:0:pre|     ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|KS_ADDER:F1|gp_cal:\pre_processing:0:pre                 ; gp_cal      ; work         ;
 ;       |gp_cal:\pre_processing:10:pre|    ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|KS_ADDER:F1|gp_cal:\pre_processing:10:pre                ; gp_cal      ; work         ;
 ;       |gp_cal:\pre_processing:11:pre|    ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|KS_ADDER:F1|gp_cal:\pre_processing:11:pre                ; gp_cal      ; work         ;
 ;       |gp_cal:\pre_processing:12:pre|    ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|KS_ADDER:F1|gp_cal:\pre_processing:12:pre                ; gp_cal      ; work         ;
 ;       |gp_cal:\pre_processing:13:pre|    ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|KS_ADDER:F1|gp_cal:\pre_processing:13:pre                ; gp_cal      ; work         ;
 ;       |gp_cal:\pre_processing:14:pre|    ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|KS_ADDER:F1|gp_cal:\pre_processing:14:pre                ; gp_cal      ; work         ;
-;       |gp_cal:\pre_processing:15:pre|    ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|KS_ADDER:F1|gp_cal:\pre_processing:15:pre                ; gp_cal      ; work         ;
 ;       |gp_cal:\pre_processing:1:pre|     ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|KS_ADDER:F1|gp_cal:\pre_processing:1:pre                 ; gp_cal      ; work         ;
 ;       |gp_cal:\pre_processing:2:pre|     ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|KS_ADDER:F1|gp_cal:\pre_processing:2:pre                 ; gp_cal      ; work         ;
 ;       |gp_cal:\pre_processing:3:pre|     ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|KS_ADDER:F1|gp_cal:\pre_processing:3:pre                 ; gp_cal      ; work         ;
 ;       |gp_cal:\pre_processing:4:pre|     ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|KS_ADDER:F1|gp_cal:\pre_processing:4:pre                 ; gp_cal      ; work         ;
 ;       |gp_cal:\pre_processing:5:pre|     ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|KS_ADDER:F1|gp_cal:\pre_processing:5:pre                 ; gp_cal      ; work         ;
-;       |gp_cal:\pre_processing:6:pre|     ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|KS_ADDER:F1|gp_cal:\pre_processing:6:pre                 ; gp_cal      ; work         ;
 ;       |gp_cal:\pre_processing:7:pre|     ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|KS_ADDER:F1|gp_cal:\pre_processing:7:pre                 ; gp_cal      ; work         ;
 ;       |gp_cal:\pre_processing:8:pre|     ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|KS_ADDER:F1|gp_cal:\pre_processing:8:pre                 ; gp_cal      ; work         ;
 ;       |gp_cal:\pre_processing:9:pre|     ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|KS_ADDER:F1|gp_cal:\pre_processing:9:pre                 ; gp_cal      ; work         ;
@@ -225,8 +223,6 @@ https://fpgasoftware.intel.com/eula.
 ;          |OR_2:U1|                       ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|KS_ADDER:F1|node_op:\stage1:11:U1|OR_2:U1                ; OR_2        ; work         ;
 ;       |node_op:\stage1:12:U1|            ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|KS_ADDER:F1|node_op:\stage1:12:U1                        ; node_op     ; work         ;
 ;          |OR_2:U1|                       ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|KS_ADDER:F1|node_op:\stage1:12:U1|OR_2:U1                ; OR_2        ; work         ;
-;       |node_op:\stage1:14:U1|            ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|KS_ADDER:F1|node_op:\stage1:14:U1                        ; node_op     ; work         ;
-;          |OR_2:U1|                       ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|KS_ADDER:F1|node_op:\stage1:14:U1|OR_2:U1                ; OR_2        ; work         ;
 ;       |node_op:\stage1:1:U1|             ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|KS_ADDER:F1|node_op:\stage1:1:U1                         ; node_op     ; work         ;
 ;          |OR_2:U1|                       ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|KS_ADDER:F1|node_op:\stage1:1:U1|OR_2:U1                 ; OR_2        ; work         ;
 ;       |node_op:\stage1:2:U1|             ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|KS_ADDER:F1|node_op:\stage1:2:U1                         ; node_op     ; work         ;
@@ -274,12 +270,11 @@ https://fpgasoftware.intel.com/eula.
 ;       |node_op:\stage3:2:U3|             ; 2 (0)       ; 0            ; 0          ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|KS_ADDER:F1|node_op:\stage3:2:U3                         ; node_op     ; work         ;
 ;          |AND_2:U0|                      ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|KS_ADDER:F1|node_op:\stage3:2:U3|AND_2:U0                ; AND_2       ; work         ;
 ;          |OR_2:U1|                       ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|KS_ADDER:F1|node_op:\stage3:2:U3|OR_2:U1                 ; OR_2        ; work         ;
-;       |node_op:\stage3:3:U3|             ; 3 (0)       ; 0            ; 0          ; 0    ; 0            ; 3 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|KS_ADDER:F1|node_op:\stage3:3:U3                         ; node_op     ; work         ;
+;       |node_op:\stage3:3:U3|             ; 2 (0)       ; 0            ; 0          ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|KS_ADDER:F1|node_op:\stage3:3:U3                         ; node_op     ; work         ;
 ;          |AND_2:U0|                      ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|KS_ADDER:F1|node_op:\stage3:3:U3|AND_2:U0                ; AND_2       ; work         ;
-;          |AND_2:U2|                      ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|KS_ADDER:F1|node_op:\stage3:3:U3|AND_2:U2                ; AND_2       ; work         ;
 ;          |OR_2:U1|                       ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|KS_ADDER:F1|node_op:\stage3:3:U3|OR_2:U1                 ; OR_2        ; work         ;
-;       |node_op:\stage3:6:U3|             ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|KS_ADDER:F1|node_op:\stage3:6:U3                         ; node_op     ; work         ;
-;          |AND_2:U0|                      ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|KS_ADDER:F1|node_op:\stage3:6:U3|AND_2:U0                ; AND_2       ; work         ;
+;       |node_op:\stage3:6:U3|             ; 2 (0)       ; 0            ; 0          ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|KS_ADDER:F1|node_op:\stage3:6:U3                         ; node_op     ; work         ;
+;          |AND_2:U0|                      ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|KS_ADDER:F1|node_op:\stage3:6:U3|AND_2:U0                ; AND_2       ; work         ;
 ;       |node_op:\stage3:7:U3|             ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|KS_ADDER:F1|node_op:\stage3:7:U3                         ; node_op     ; work         ;
 ;          |AND_2:U0|                      ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|KS_ADDER:F1|node_op:\stage3:7:U3|AND_2:U0                ; AND_2       ; work         ;
 ;       |node_op:\stage3:8:U3|             ; 4 (0)       ; 0            ; 0          ; 0    ; 0            ; 4 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|KS_ADDER:F1|node_op:\stage3:8:U3                         ; node_op     ; work         ;
@@ -299,16 +294,17 @@ https://fpgasoftware.intel.com/eula.
 ;          |OR_2:U1|                       ; 3 (3)       ; 0            ; 0          ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|KS_ADDER:F1|node_op:\stage4:4:U4|OR_2:U1                 ; OR_2        ; work         ;
 ;       |node_op:\stage4:5:U4|             ; 3 (0)       ; 0            ; 0          ; 0    ; 0            ; 3 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|KS_ADDER:F1|node_op:\stage4:5:U4                         ; node_op     ; work         ;
 ;          |OR_2:U1|                       ; 3 (3)       ; 0            ; 0          ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|KS_ADDER:F1|node_op:\stage4:5:U4|OR_2:U1                 ; OR_2        ; work         ;
-;       |node_op:\stage4:6:U4|             ; 4 (0)       ; 0            ; 0          ; 0    ; 0            ; 4 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|KS_ADDER:F1|node_op:\stage4:6:U4                         ; node_op     ; work         ;
-;          |AND_2:U0|                      ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|KS_ADDER:F1|node_op:\stage4:6:U4|AND_2:U0                ; AND_2       ; work         ;
-;          |OR_2:U1|                       ; 3 (3)       ; 0            ; 0          ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|KS_ADDER:F1|node_op:\stage4:6:U4|OR_2:U1                 ; OR_2        ; work         ;
-;       |node_op:\stage4:7:U4|             ; 4 (0)       ; 0            ; 0          ; 0    ; 0            ; 4 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|KS_ADDER:F1|node_op:\stage4:7:U4                         ; node_op     ; work         ;
-;          |AND_2:U2|                      ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|KS_ADDER:F1|node_op:\stage4:7:U4|AND_2:U2                ; AND_2       ; work         ;
-;          |OR_2:U1|                       ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|KS_ADDER:F1|node_op:\stage4:7:U4|OR_2:U1                 ; OR_2        ; work         ;
+;       |node_op:\stage4:6:U4|             ; 5 (0)       ; 0            ; 0          ; 0    ; 0            ; 5 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|KS_ADDER:F1|node_op:\stage4:6:U4                         ; node_op     ; work         ;
+;          |AND_2:U2|                      ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|KS_ADDER:F1|node_op:\stage4:6:U4|AND_2:U2                ; AND_2       ; work         ;
+;          |OR_2:U1|                       ; 4 (4)       ; 0            ; 0          ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|KS_ADDER:F1|node_op:\stage4:6:U4|OR_2:U1                 ; OR_2        ; work         ;
+;       |node_op:\stage4:7:U4|             ; 3 (0)       ; 0            ; 0          ; 0    ; 0            ; 3 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|KS_ADDER:F1|node_op:\stage4:7:U4                         ; node_op     ; work         ;
+;          |OR_2:U1|                       ; 3 (3)       ; 0            ; 0          ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|KS_ADDER:F1|node_op:\stage4:7:U4|OR_2:U1                 ; OR_2        ; work         ;
+;    |NAND1:F4|                            ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|NAND1:F4                                                 ; NAND1       ; work         ;
+;       |AND_2:\process1:0:U0|             ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|NAND1:F4|AND_2:\process1:0:U0                            ; AND_2       ; work         ;
 ;    |subtractor:F2|                       ; 89 (0)      ; 0            ; 0          ; 0    ; 0            ; 89 (0)       ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2                                            ; subtractor  ; work         ;
-;       |KS_ADDER:F2|                      ; 89 (33)     ; 0            ; 0          ; 0    ; 0            ; 89 (33)      ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2                                ; KS_ADDER    ; work         ;
+;       |KS_ADDER:F2|                      ; 89 (32)     ; 0            ; 0          ; 0    ; 0            ; 89 (32)      ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2                                ; KS_ADDER    ; work         ;
 ;          |gp_cal:\pre_processing:10:pre| ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|gp_cal:\pre_processing:10:pre  ; gp_cal      ; work         ;
-;          |gp_cal:\pre_processing:12:pre| ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|gp_cal:\pre_processing:12:pre  ; gp_cal      ; work         ;
+;          |gp_cal:\pre_processing:11:pre| ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|gp_cal:\pre_processing:11:pre  ; gp_cal      ; work         ;
 ;          |gp_cal:\pre_processing:9:pre|  ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|gp_cal:\pre_processing:9:pre   ; gp_cal      ; work         ;
 ;          |node_op:\stage1:0:U1|          ; 3 (0)       ; 0            ; 0          ; 0    ; 0            ; 3 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage1:0:U1           ; node_op     ; work         ;
 ;             |AND_2:U0|                   ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage1:0:U1|AND_2:U0  ; AND_2       ; work         ;
@@ -316,24 +312,21 @@ https://fpgasoftware.intel.com/eula.
 ;             |OR_2:U1|                    ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage1:0:U1|OR_2:U1   ; OR_2        ; work         ;
 ;          |node_op:\stage1:10:U1|         ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage1:10:U1          ; node_op     ; work         ;
 ;             |AND_2:U0|                   ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage1:10:U1|AND_2:U0 ; AND_2       ; work         ;
-;          |node_op:\stage1:11:U1|         ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage1:11:U1          ; node_op     ; work         ;
-;             |AND_2:U0|                   ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage1:11:U1|AND_2:U0 ; AND_2       ; work         ;
-;          |node_op:\stage1:13:U1|         ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage1:13:U1          ; node_op     ; work         ;
-;             |AND_2:U0|                   ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage1:13:U1|AND_2:U0 ; AND_2       ; work         ;
+;          |node_op:\stage1:12:U1|         ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage1:12:U1          ; node_op     ; work         ;
+;             |AND_2:U0|                   ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage1:12:U1|AND_2:U0 ; AND_2       ; work         ;
 ;          |node_op:\stage1:8:U1|          ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage1:8:U1           ; node_op     ; work         ;
 ;             |AND_2:U0|                   ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage1:8:U1|AND_2:U0  ; AND_2       ; work         ;
 ;          |node_op:\stage1:9:U1|          ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage1:9:U1           ; node_op     ; work         ;
 ;             |AND_2:U0|                   ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage1:9:U1|AND_2:U0  ; AND_2       ; work         ;
-;          |node_op:\stage2:0:U2|          ; 3 (0)       ; 0            ; 0          ; 0    ; 0            ; 3 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage2:0:U2           ; node_op     ; work         ;
-;             |AND_2:U2|                   ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage2:0:U2|AND_2:U2  ; AND_2       ; work         ;
+;          |node_op:\stage2:0:U2|          ; 2 (0)       ; 0            ; 0          ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage2:0:U2           ; node_op     ; work         ;
 ;             |OR_2:U1|                    ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage2:0:U2|OR_2:U1   ; OR_2        ; work         ;
 ;          |node_op:\stage2:11:U2|         ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage2:11:U2          ; node_op     ; work         ;
 ;             |AND_2:U0|                   ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage2:11:U2|AND_2:U0 ; AND_2       ; work         ;
 ;          |node_op:\stage2:1:U2|          ; 4 (0)       ; 0            ; 0          ; 0    ; 0            ; 4 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage2:1:U2           ; node_op     ; work         ;
 ;             |AND_2:U2|                   ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage2:1:U2|AND_2:U2  ; AND_2       ; work         ;
 ;             |OR_2:U1|                    ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage2:1:U2|OR_2:U1   ; OR_2        ; work         ;
-;          |node_op:\stage2:2:U2|          ; 2 (0)       ; 0            ; 0          ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage2:2:U2           ; node_op     ; work         ;
-;             |OR_2:U1|                    ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage2:2:U2|OR_2:U1   ; OR_2        ; work         ;
+;          |node_op:\stage2:2:U2|          ; 3 (0)       ; 0            ; 0          ; 0    ; 0            ; 3 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage2:2:U2           ; node_op     ; work         ;
+;             |OR_2:U1|                    ; 3 (3)       ; 0            ; 0          ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage2:2:U2|OR_2:U1   ; OR_2        ; work         ;
 ;          |node_op:\stage2:3:U2|          ; 2 (0)       ; 0            ; 0          ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage2:3:U2           ; node_op     ; work         ;
 ;             |OR_2:U1|                    ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage2:3:U2|OR_2:U1   ; OR_2        ; work         ;
 ;          |node_op:\stage2:4:U2|          ; 3 (0)       ; 0            ; 0          ; 0    ; 0            ; 3 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage2:4:U2           ; node_op     ; work         ;
@@ -348,14 +341,12 @@ https://fpgasoftware.intel.com/eula.
 ;             |OR_2:U1|                    ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage2:8:U2|OR_2:U1   ; OR_2        ; work         ;
 ;          |node_op:\stage3:0:U3|          ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage3:0:U3           ; node_op     ; work         ;
 ;             |AND_2:U2|                   ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage3:0:U3|AND_2:U2  ; AND_2       ; work         ;
-;          |node_op:\stage3:10:U3|         ; 2 (0)       ; 0            ; 0          ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage3:10:U3          ; node_op     ; work         ;
+;          |node_op:\stage3:10:U3|         ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage3:10:U3          ; node_op     ; work         ;
 ;             |AND_2:U0|                   ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage3:10:U3|AND_2:U0 ; AND_2       ; work         ;
-;             |AND_2:U2|                   ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage3:10:U3|AND_2:U2 ; AND_2       ; work         ;
 ;          |node_op:\stage3:1:U3|          ; 2 (0)       ; 0            ; 0          ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage3:1:U3           ; node_op     ; work         ;
 ;             |AND_2:U0|                   ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage3:1:U3|AND_2:U0  ; AND_2       ; work         ;
 ;             |AND_2:U2|                   ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage3:1:U3|AND_2:U2  ; AND_2       ; work         ;
-;          |node_op:\stage3:2:U3|          ; 2 (0)       ; 0            ; 0          ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage3:2:U3           ; node_op     ; work         ;
-;             |AND_2:U0|                   ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage3:2:U3|AND_2:U0  ; AND_2       ; work         ;
+;          |node_op:\stage3:2:U3|          ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage3:2:U3           ; node_op     ; work         ;
 ;             |AND_2:U2|                   ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage3:2:U3|AND_2:U2  ; AND_2       ; work         ;
 ;          |node_op:\stage3:3:U3|          ; 2 (0)       ; 0            ; 0          ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage3:3:U3           ; node_op     ; work         ;
 ;             |AND_2:U0|                   ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage3:3:U3|AND_2:U0  ; AND_2       ; work         ;
@@ -363,10 +354,12 @@ https://fpgasoftware.intel.com/eula.
 ;          |node_op:\stage3:4:U3|          ; 2 (0)       ; 0            ; 0          ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage3:4:U3           ; node_op     ; work         ;
 ;             |AND_2:U0|                   ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage3:4:U3|AND_2:U0  ; AND_2       ; work         ;
 ;             |AND_2:U2|                   ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage3:4:U3|AND_2:U2  ; AND_2       ; work         ;
-;          |node_op:\stage3:5:U3|          ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage3:5:U3           ; node_op     ; work         ;
+;          |node_op:\stage3:5:U3|          ; 2 (0)       ; 0            ; 0          ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage3:5:U3           ; node_op     ; work         ;
+;             |AND_2:U0|                   ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage3:5:U3|AND_2:U0  ; AND_2       ; work         ;
 ;             |AND_2:U2|                   ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage3:5:U3|AND_2:U2  ; AND_2       ; work         ;
 ;          |node_op:\stage3:6:U3|          ; 2 (0)       ; 0            ; 0          ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage3:6:U3           ; node_op     ; work         ;
-;             |AND_2:U2|                   ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage3:6:U3|AND_2:U2  ; AND_2       ; work         ;
+;             |AND_2:U0|                   ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage3:6:U3|AND_2:U0  ; AND_2       ; work         ;
+;             |AND_2:U2|                   ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage3:6:U3|AND_2:U2  ; AND_2       ; work         ;
 ;          |node_op:\stage3:7:U3|          ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage3:7:U3           ; node_op     ; work         ;
 ;             |AND_2:U0|                   ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage3:7:U3|AND_2:U0  ; AND_2       ; work         ;
 ;          |node_op:\stage3:8:U3|          ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage3:8:U3           ; node_op     ; work         ;
@@ -374,12 +367,16 @@ https://fpgasoftware.intel.com/eula.
 ;          |node_op:\stage3:9:U3|          ; 2 (0)       ; 0            ; 0          ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage3:9:U3           ; node_op     ; work         ;
 ;             |AND_2:U0|                   ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage3:9:U3|AND_2:U0  ; AND_2       ; work         ;
 ;             |AND_2:U2|                   ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage3:9:U3|AND_2:U2  ; AND_2       ; work         ;
+;          |node_op:\stage4:2:U4|          ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage4:2:U4           ; node_op     ; work         ;
+;             |AND_2:U2|                   ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage4:2:U4|AND_2:U2  ; AND_2       ; work         ;
 ;          |node_op:\stage4:3:U4|          ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage4:3:U4           ; node_op     ; work         ;
 ;             |AND_2:U2|                   ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage4:3:U4|AND_2:U2  ; AND_2       ; work         ;
 ;          |node_op:\stage4:4:U4|          ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage4:4:U4           ; node_op     ; work         ;
 ;             |AND_2:U2|                   ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage4:4:U4|AND_2:U2  ; AND_2       ; work         ;
-;          |node_op:\stage4:7:U4|          ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage4:7:U4           ; node_op     ; work         ;
-;             |AND_2:U2|                   ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage4:7:U4|AND_2:U2  ; AND_2       ; work         ;
+;          |node_op:\stage4:6:U4|          ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage4:6:U4           ; node_op     ; work         ;
+;             |AND_2:U2|                   ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage4:6:U4|AND_2:U2  ; AND_2       ; work         ;
+;          |node_op:\stage4:7:U4|          ; 2 (0)       ; 0            ; 0          ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage4:7:U4           ; node_op     ; work         ;
+;             |AND_2:U2|                   ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ALU|subtractor:F2|KS_ADDER:F2|node_op:\stage4:7:U4|AND_2:U2  ; AND_2       ; work         ;
 +------------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------------------------------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -399,14 +396,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
-+-----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "subtractor:F2|KS_ADDER:F2"                                                           ;
-+-------+--------+----------+-------------------------------------------------------------------------------------+
-; Port  ; Type   ; Severity ; Details                                                                             ;
-+-------+--------+----------+-------------------------------------------------------------------------------------+
-; c_in  ; Input  ; Info     ; Stuck at VCC                                                                        ;
-; c_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-------+--------+----------+-------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "subtractor:F2|KS_ADDER:F2"                                                            ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; c_in   ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; c_out  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; carryo ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------+
@@ -424,12 +422,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Sat Dec 05 13:42:24 2020
+    Info: Processing started: Sat Dec 05 14:14:32 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ALU -c ALU
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file alu.vhd
-    Info (12022): Found design unit 1: ALU-structure File: S:/VHDL Projects/Project_A/ALU.vhd Line: 13
+    Info (12022): Found design unit 1: ALU-structure File: S:/VHDL Projects/Project_A/ALU.vhd Line: 14
     Info (12023): Found entity 1: ALU File: S:/VHDL Projects/Project_A/ALU.vhd Line: 3
 Warning (12019): Can't analyze file -- file MY_XOR.vhd is missing
 Info (12021): Found 2 design units, including 1 entities, in source file xor2.vhd
@@ -448,7 +446,7 @@ Info (12021): Found 2 design units, including 1 entities, in source file node_op
     Info (12022): Found design unit 1: node_op-struct File: S:/VHDL Projects/Project_A/node_op.vhd Line: 8
     Info (12023): Found entity 1: node_op File: S:/VHDL Projects/Project_A/node_op.vhd Line: 1
 Info (12021): Found 2 design units, including 1 entities, in source file ks_adder.vhd
-    Info (12022): Found design unit 1: KS_ADDER-calc File: S:/VHDL Projects/Project_A/KS_ADDER.vhd Line: 9
+    Info (12022): Found design unit 1: KS_ADDER-calc File: S:/VHDL Projects/Project_A/KS_ADDER.vhd Line: 10
     Info (12023): Found entity 1: KS_ADDER File: S:/VHDL Projects/Project_A/KS_ADDER.vhd Line: 1
 Info (12021): Found 2 design units, including 1 entities, in source file testbench.vhd
     Info (12022): Found design unit 1: Testbench-tb File: S:/VHDL Projects/Project_A/Testbench.vhd Line: 4
@@ -457,9 +455,9 @@ Info (12021): Found 2 design units, including 1 entities, in source file ones_co
     Info (12022): Found design unit 1: ones_complement-struct File: S:/VHDL Projects/Project_A/ones_complement.vhd Line: 9
     Info (12023): Found entity 1: ones_complement File: S:/VHDL Projects/Project_A/ones_complement.vhd Line: 1
 Info (12127): Elaborating entity "ALU" for the top level hierarchy
-Info (12128): Elaborating entity "KS_ADDER" for hierarchy "KS_ADDER:F1" File: S:/VHDL Projects/Project_A/ALU.vhd Line: 49
-Info (12128): Elaborating entity "gp_cal" for hierarchy "KS_ADDER:F1|gp_cal:\pre_processing:0:pre" File: S:/VHDL Projects/Project_A/KS_ADDER.vhd Line: 33
-Info (12128): Elaborating entity "node_op" for hierarchy "KS_ADDER:F1|node_op:\stage1:0:U1" File: S:/VHDL Projects/Project_A/KS_ADDER.vhd Line: 44
+Info (12128): Elaborating entity "KS_ADDER" for hierarchy "KS_ADDER:F1" File: S:/VHDL Projects/Project_A/ALU.vhd Line: 51
+Info (12128): Elaborating entity "gp_cal" for hierarchy "KS_ADDER:F1|gp_cal:\pre_processing:0:pre" File: S:/VHDL Projects/Project_A/KS_ADDER.vhd Line: 34
+Info (12128): Elaborating entity "node_op" for hierarchy "KS_ADDER:F1|node_op:\stage1:0:U1" File: S:/VHDL Projects/Project_A/KS_ADDER.vhd Line: 45
 Warning (12125): Using design file and_2.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: AND_2-struct File: S:/VHDL Projects/Project_A/and_2.vhd Line: 9
     Info (12023): Found entity 1: AND_2 File: S:/VHDL Projects/Project_A/and_2.vhd Line: 1
@@ -471,22 +469,24 @@ Info (12128): Elaborating entity "OR_2" for hierarchy "KS_ADDER:F1|node_op:\stag
 Warning (12125): Using design file subtractor.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: subtractor-calc File: S:/VHDL Projects/Project_A/subtractor.vhd Line: 8
     Info (12023): Found entity 1: subtractor File: S:/VHDL Projects/Project_A/subtractor.vhd Line: 1
-Info (12128): Elaborating entity "subtractor" for hierarchy "subtractor:F2" File: S:/VHDL Projects/Project_A/ALU.vhd Line: 50
-Info (12128): Elaborating entity "ones_complement" for hierarchy "subtractor:F2|ones_complement:F1" File: S:/VHDL Projects/Project_A/subtractor.vhd Line: 27
-Info (12128): Elaborating entity "XOR1" for hierarchy "XOR1:F3" File: S:/VHDL Projects/Project_A/ALU.vhd Line: 51
+Info (12128): Elaborating entity "subtractor" for hierarchy "subtractor:F2" File: S:/VHDL Projects/Project_A/ALU.vhd Line: 52
+Info (12128): Elaborating entity "ones_complement" for hierarchy "subtractor:F2|ones_complement:F1" File: S:/VHDL Projects/Project_A/subtractor.vhd Line: 28
+Info (12128): Elaborating entity "XOR1" for hierarchy "XOR1:F3" File: S:/VHDL Projects/Project_A/ALU.vhd Line: 53
 Info (12128): Elaborating entity "XOR2" for hierarchy "XOR1:F3|XOR2:\process1:0:U0" File: S:/VHDL Projects/Project_A/XOR1.vhd Line: 19
 Warning (12125): Using design file nand1.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: NAND1-plan File: S:/VHDL Projects/Project_A/nand1.vhd Line: 8
     Info (12023): Found entity 1: NAND1 File: S:/VHDL Projects/Project_A/nand1.vhd Line: 1
-Info (12128): Elaborating entity "NAND1" for hierarchy "NAND1:F4" File: S:/VHDL Projects/Project_A/ALU.vhd Line: 52
-Info (21057): Implemented 289 device resources after synthesis - the final resource count might be different
+Info (12128): Elaborating entity "NAND1" for hierarchy "NAND1:F4" File: S:/VHDL Projects/Project_A/ALU.vhd Line: 54
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "Carryo[0]" is stuck at GND File: S:/VHDL Projects/Project_A/ALU.vhd Line: 10
+Info (21057): Implemented 306 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 34 input pins
-    Info (21059): Implemented 18 output pins
+    Info (21059): Implemented 35 output pins
     Info (21061): Implemented 237 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 9 warnings
-    Info: Peak virtual memory: 4756 megabytes
-    Info: Processing ended: Sat Dec 05 13:42:36 2020
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:29
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 11 warnings
+    Info: Peak virtual memory: 4764 megabytes
+    Info: Processing ended: Sat Dec 05 14:14:51 2020
+    Info: Elapsed time: 00:00:19
+    Info: Total CPU time (on all processors): 00:00:49
 
 

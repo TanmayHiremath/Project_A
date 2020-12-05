@@ -10,32 +10,32 @@ z2
 cModel Technology
 Z0 dS:/VHDL Projects/Project_A/simulation/modelsim
 Ealu
-Z1 w1607154700
+Z1 w1607157285
 !i122 0
 R0
 Z2 8S:/VHDL Projects/Project_A/ALU.vhd
 Z3 FS:/VHDL Projects/Project_A/ALU.vhd
 l0
 L3 1
-V>Nd=lm;J]jWN4oSZPVc7P0
-!s100 T5iE=zSRSHEdD1QAiOcn^1
+Vf;lW0H]1BDlh<zDb2Pa3=2
+!s100 _AT7XPBZ<7XAoE;[[h_LD2
 Z4 OV;C;2020.1;71
 31
-Z5 !s110 1607155893
+Z5 !s110 1607157608
 !i10b 1
-Z6 !s108 1607155893.000000
+Z6 !s108 1607157608.000000
 Z7 !s90 -reportprogress|300|-93|-work|work|S:/VHDL Projects/Project_A/ALU.vhd|
 Z8 !s107 S:/VHDL Projects/Project_A/ALU.vhd|
 !i113 1
 Z9 o-93 -work work
 Z10 tExplicit 1 CvgOpt 0
 Astructure
-DEx4 work 3 alu 0 22 >Nd=lm;J]jWN4oSZPVc7P0
+DEx4 work 3 alu 0 22 f;lW0H]1BDlh<zDb2Pa3=2
 !i122 0
-l48
-L13 59
-VHa<SK0EG3hF;iHRK<0LfP0
-!s100 ?@bU;=Bn27HBQll;H?TA91
+l50
+L14 60
+VMOZ^Cd[7Rz>?J;UF70W?13
+!s100 L=lb;JfOBUg`RiIK1W`LY1
 R4
 31
 R5
@@ -58,9 +58,9 @@ VlGE]J=ceeejag0;Uj02Ni2
 !s100 T_^:YM5lTlMReRC@GKMZ21
 R4
 31
-Z14 !s110 1607155894
+Z14 !s110 1607157609
 !i10b 1
-Z15 !s108 1607155894.000000
+Z15 !s108 1607157609.000000
 Z16 !s90 -reportprogress|300|-93|-work|work|S:/VHDL Projects/Project_A/and_2.vhd|
 Z17 !s107 S:/VHDL Projects/Project_A/and_2.vhd|
 !i113 1
@@ -95,9 +95,9 @@ VG>4z9DVdo>EQSZo6m8zog1
 !s100 5HlD_XgNU`jf6Co:Udj0W1
 R4
 31
-R14
+R5
 !i10b 1
-R15
+R6
 Z21 !s90 -reportprogress|300|-93|-work|work|S:/VHDL Projects/Project_A/gp_cal.vhd|
 Z22 !s107 S:/VHDL Projects/Project_A/gp_cal.vhd|
 !i113 1
@@ -112,24 +112,24 @@ VOe9Qf9l`AMFGfNQi@dI4f3
 !s100 ;IbG_NHmMT91_Ge;Xnk?<2
 R4
 31
-R14
+R5
 !i10b 1
-R15
+R6
 R21
 R22
 !i113 1
 R9
 R10
 Eks_adder
-Z23 w1607155862
+Z23 w1607157252
 !i122 5
 R0
 Z24 8S:/VHDL Projects/Project_A/KS_ADDER.vhd
 Z25 FS:/VHDL Projects/Project_A/KS_ADDER.vhd
 l0
 L1 1
-Vfo=LgAf:e=BdKo5VeL9Hb3
-!s100 ^HWaCDXQgS92U`0bfmle50
+V4V4f4gN4f[PNTTe53Wg6o1
+!s100 Deizz=zaLhPILc4<N@^z;1
 R4
 31
 R14
@@ -141,12 +141,12 @@ Z27 !s107 S:/VHDL Projects/Project_A/KS_ADDER.vhd|
 R9
 R10
 Acalc
-DEx4 work 8 ks_adder 0 22 fo=LgAf:e=BdKo5VeL9Hb3
+DEx4 work 8 ks_adder 0 22 4V4f4gN4f[PNTTe53Wg6o1
 !i122 5
-l29
-L9 88
-V6XJ[JF05hOPRQLNeg<T?S1
-!s100 CEF__cGH72j6EAQBB^F]n0
+l30
+L10 88
+VF`TVDPbe3M8=_n9_OJI?X3
+!s100 6j_^<c<WWc]9F>Ri1[E;d1
 R4
 31
 R14
@@ -169,9 +169,9 @@ VJT01dgEXJ]I^9U@mmf=eR0
 !s100 1g]K=K2AQC[[?`YC@jB<P2
 R4
 31
-Z31 !s110 1607155895
+Z31 !s110 1607157610
 !i10b 1
-Z32 !s108 1607155895.000000
+Z32 !s108 1607157610.000000
 Z33 !s90 -reportprogress|300|-93|-work|work|S:/VHDL Projects/Project_A/nand1.vhd|
 Z34 !s107 S:/VHDL Projects/Project_A/nand1.vhd|
 !i113 1
@@ -208,7 +208,7 @@ R4
 31
 R14
 !i10b 1
-R15
+R6
 Z38 !s90 -reportprogress|300|-93|-work|work|S:/VHDL Projects/Project_A/node_op.vhd|
 Z39 !s107 S:/VHDL Projects/Project_A/node_op.vhd|
 !i113 1
@@ -218,25 +218,25 @@ Astruct
 DEx4 work 7 node_op 0 22 n:kZ7EgSTOHU:8;0hVFIJ3
 !i122 4
 l25
-L8 23
+Z40 L8 23
 VEezY@9?dX0WkJ0:KU=ERi2
 !s100 IK07>Uh<^jG:S4dZ7XX_K0
 R4
 31
 R14
 !i10b 1
-R15
+R6
 R38
 R39
 !i113 1
 R9
 R10
 Eones_complement
-Z40 w1607120466
+Z41 w1607120466
 !i122 6
 R0
-Z41 8S:/VHDL Projects/Project_A/ones_complement.vhd
-Z42 FS:/VHDL Projects/Project_A/ones_complement.vhd
+Z42 8S:/VHDL Projects/Project_A/ones_complement.vhd
+Z43 FS:/VHDL Projects/Project_A/ones_complement.vhd
 l0
 L1 1
 VHMLIQgLAH[60mFH6LCdjP3
@@ -246,8 +246,8 @@ R4
 R14
 !i10b 1
 R15
-Z43 !s90 -reportprogress|300|-93|-work|work|S:/VHDL Projects/Project_A/ones_complement.vhd|
-Z44 !s107 S:/VHDL Projects/Project_A/ones_complement.vhd|
+Z44 !s90 -reportprogress|300|-93|-work|work|S:/VHDL Projects/Project_A/ones_complement.vhd|
+Z45 !s107 S:/VHDL Projects/Project_A/ones_complement.vhd|
 !i113 1
 R9
 R10
@@ -263,17 +263,17 @@ R4
 R14
 !i10b 1
 R15
-R43
 R44
+R45
 !i113 1
 R9
 R10
 Eor_2
-Z45 w1607032254
+Z46 w1607032254
 !i122 8
 R0
-Z46 8S:/VHDL Projects/Project_A/or_2.vhd
-Z47 FS:/VHDL Projects/Project_A/or_2.vhd
+Z47 8S:/VHDL Projects/Project_A/or_2.vhd
+Z48 FS:/VHDL Projects/Project_A/or_2.vhd
 l0
 L1 1
 VhZJdAa?8AeLL8SA]S;Pb[2
@@ -283,8 +283,8 @@ R4
 R14
 !i10b 1
 R15
-Z48 !s90 -reportprogress|300|-93|-work|work|S:/VHDL Projects/Project_A/or_2.vhd|
-Z49 !s107 S:/VHDL Projects/Project_A/or_2.vhd|
+Z49 !s90 -reportprogress|300|-93|-work|work|S:/VHDL Projects/Project_A/or_2.vhd|
+Z50 !s107 S:/VHDL Projects/Project_A/or_2.vhd|
 !i113 1
 R9
 R10
@@ -300,17 +300,17 @@ R4
 R14
 !i10b 1
 R15
-R48
 R49
+R50
 !i113 1
 R9
 R10
 Esubtractor
-Z50 w1607154698
+Z51 w1607157257
 !i122 9
 R0
-Z51 8S:/VHDL Projects/Project_A/subtractor.vhd
-Z52 FS:/VHDL Projects/Project_A/subtractor.vhd
+Z52 8S:/VHDL Projects/Project_A/subtractor.vhd
+Z53 FS:/VHDL Projects/Project_A/subtractor.vhd
 l0
 L1 1
 V922a`5f`:zeKQadU_^2K81
@@ -319,35 +319,35 @@ R4
 31
 R31
 !i10b 1
-R32
-Z53 !s90 -reportprogress|300|-93|-work|work|S:/VHDL Projects/Project_A/subtractor.vhd|
-Z54 !s107 S:/VHDL Projects/Project_A/subtractor.vhd|
+R15
+Z54 !s90 -reportprogress|300|-93|-work|work|S:/VHDL Projects/Project_A/subtractor.vhd|
+Z55 !s107 S:/VHDL Projects/Project_A/subtractor.vhd|
 !i113 1
 R9
 R10
 Acalc
 DEx4 work 10 subtractor 0 22 922a`5f`:zeKQadU_^2K81
 !i122 9
-l26
-L8 22
-VZ>AVe<3=V6iFW;iPk0o>C2
-!s100 C;gaHYVQ:`;PnDREeh1Re0
+l27
+R40
+V>VSaz<@12Y8]GN:7i_A2H0
+!s100 iAH2RZNLKTKbYgF=Oc0kf3
 R4
 31
 R31
 !i10b 1
-R32
-R53
+R15
 R54
+R55
 !i113 1
 R9
 R10
 Etestbench
-R28
+Z56 w1607157559
 !i122 11
 R0
-Z55 8S:/VHDL Projects/Project_A/Testbench.vhd
-Z56 FS:/VHDL Projects/Project_A/Testbench.vhd
+Z57 8S:/VHDL Projects/Project_A/Testbench.vhd
+Z58 FS:/VHDL Projects/Project_A/Testbench.vhd
 l0
 L1 1
 V36Gc6G@ASRCSi7f_R`_713
@@ -357,7 +357,7 @@ R4
 R31
 !i10b 1
 R32
-Z57 !s90 -reportprogress|300|-93|-work|work|S:/VHDL Projects/Project_A/Testbench.vhd|
+Z59 !s90 -reportprogress|300|-93|-work|work|S:/VHDL Projects/Project_A/Testbench.vhd|
 !s107 S:/VHDL Projects/Project_A/Testbench.vhd|
 !i113 1
 R9
@@ -365,17 +365,17 @@ R10
 Atb
 DEx4 work 9 testbench 0 22 36Gc6G@ASRCSi7f_R`_713
 !i122 11
-l20
-L4 364
-V;0`:JModj_@KB;MlYj3`i1
-!s100 `ENAPCzfDz`Rzfkm2llGg3
+l22
+L4 366
+VjFNKEmJ<f0bofDhLknl[n1
+!s100 NQ<_ZVdX_O^cXc360]F>b3
 R4
 31
 R31
 !i10b 1
 R32
-R57
-Z58 !s107 S:/VHDL Projects/Project_A/Testbench.vhd|
+R59
+Z60 !s107 S:/VHDL Projects/Project_A/Testbench.vhd|
 !i113 1
 R9
 R10
@@ -383,19 +383,19 @@ Exor1
 R28
 !i122 2
 R0
-Z59 8S:/VHDL Projects/Project_A/XOR1.vhd
-Z60 FS:/VHDL Projects/Project_A/XOR1.vhd
+Z61 8S:/VHDL Projects/Project_A/XOR1.vhd
+Z62 FS:/VHDL Projects/Project_A/XOR1.vhd
 l0
 L1 1
 V:0m6]Do=R_kiM6Njk999i2
 !s100 W0<k;ffT;=Djjc]jFnXH=3
 R4
 31
-R14
+R5
 !i10b 1
 R6
-Z61 !s90 -reportprogress|300|-93|-work|work|S:/VHDL Projects/Project_A/XOR1.vhd|
-Z62 !s107 S:/VHDL Projects/Project_A/XOR1.vhd|
+Z63 !s90 -reportprogress|300|-93|-work|work|S:/VHDL Projects/Project_A/XOR1.vhd|
+Z64 !s107 S:/VHDL Projects/Project_A/XOR1.vhd|
 !i113 1
 R9
 R10
@@ -408,20 +408,20 @@ VSIaGlbOdn5QOnnYjIicnB0
 !s100 7Vb]cdgDZkB]QHARnYJVi2
 R4
 31
-R14
+R5
 !i10b 1
 R6
-R61
-R62
+R63
+R64
 !i113 1
 R9
 R10
 Exor2
-Z63 w1607007620
+Z65 w1607007620
 !i122 1
 R0
-Z64 8S:/VHDL Projects/Project_A/XOR2.vhd
-Z65 FS:/VHDL Projects/Project_A/XOR2.vhd
+Z66 8S:/VHDL Projects/Project_A/XOR2.vhd
+Z67 FS:/VHDL Projects/Project_A/XOR2.vhd
 l0
 L1 1
 V80mS=2EMjT41Fg>g5ERDW1
@@ -431,8 +431,8 @@ R4
 R5
 !i10b 1
 R6
-Z66 !s90 -reportprogress|300|-93|-work|work|S:/VHDL Projects/Project_A/XOR2.vhd|
-Z67 !s107 S:/VHDL Projects/Project_A/XOR2.vhd|
+Z68 !s90 -reportprogress|300|-93|-work|work|S:/VHDL Projects/Project_A/XOR2.vhd|
+Z69 !s107 S:/VHDL Projects/Project_A/XOR2.vhd|
 !i113 1
 R9
 R10
@@ -448,8 +448,8 @@ R4
 R5
 !i10b 1
 R6
-R66
-R67
+R68
+R69
 !i113 1
 R9
 R10

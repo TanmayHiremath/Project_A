@@ -3,7 +3,8 @@ port(
 	I0,I1 : in bit_vector(15 downto 0);
 	C_in	:	in bit;
 	A     : out bit_vector(15 downto 0);
-	C_out		: out bit
+	C_out		: out bit;
+	Carryo: out bit_vector(16 downto 0)
 	);
 end entity;	
 architecture calc of KS_ADDER is 
@@ -91,6 +92,6 @@ sum(i)<= p_4(i) xor carry(i);
 end generate post_processing;
 A<=sum;
 C_out<=carry(16);
-
+Carryo<= carry;
 
 end calc;

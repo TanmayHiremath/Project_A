@@ -12,117 +12,117 @@
 # 
 # vcom -93 -work work {S:/VHDL Projects/Project_A/ALU.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:41:33 on Dec 05,2020
+# Start time: 14:10:08 on Dec 05,2020
 # vcom -reportprogress 300 -93 -work work S:/VHDL Projects/Project_A/ALU.vhd 
 # -- Loading package STANDARD
 # -- Compiling entity ALU
 # -- Compiling architecture structure of ALU
-# End time: 13:41:33 on Dec 05,2020, Elapsed time: 0:00:00
+# End time: 14:10:08 on Dec 05,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {S:/VHDL Projects/Project_A/XOR2.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:41:33 on Dec 05,2020
+# Start time: 14:10:08 on Dec 05,2020
 # vcom -reportprogress 300 -93 -work work S:/VHDL Projects/Project_A/XOR2.vhd 
 # -- Loading package STANDARD
 # -- Compiling entity XOR2
 # -- Compiling architecture struct of XOR2
-# End time: 13:41:33 on Dec 05,2020, Elapsed time: 0:00:00
+# End time: 14:10:08 on Dec 05,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {S:/VHDL Projects/Project_A/XOR1.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:41:33 on Dec 05,2020
+# Start time: 14:10:08 on Dec 05,2020
 # vcom -reportprogress 300 -93 -work work S:/VHDL Projects/Project_A/XOR1.vhd 
 # -- Loading package STANDARD
 # -- Compiling entity XOR1
 # -- Compiling architecture plan of XOR1
-# End time: 13:41:34 on Dec 05,2020, Elapsed time: 0:00:01
+# End time: 14:10:08 on Dec 05,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {S:/VHDL Projects/Project_A/gp_cal.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:41:34 on Dec 05,2020
+# Start time: 14:10:08 on Dec 05,2020
 # vcom -reportprogress 300 -93 -work work S:/VHDL Projects/Project_A/gp_cal.vhd 
 # -- Loading package STANDARD
 # -- Compiling entity gp_cal
 # -- Compiling architecture struct of gp_cal
-# End time: 13:41:34 on Dec 05,2020, Elapsed time: 0:00:00
+# End time: 14:10:08 on Dec 05,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {S:/VHDL Projects/Project_A/node_op.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:41:34 on Dec 05,2020
+# Start time: 14:10:08 on Dec 05,2020
 # vcom -reportprogress 300 -93 -work work S:/VHDL Projects/Project_A/node_op.vhd 
 # -- Loading package STANDARD
 # -- Compiling entity node_op
 # -- Compiling architecture struct of node_op
-# End time: 13:41:34 on Dec 05,2020, Elapsed time: 0:00:00
+# End time: 14:10:09 on Dec 05,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {S:/VHDL Projects/Project_A/KS_ADDER.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:41:34 on Dec 05,2020
+# Start time: 14:10:09 on Dec 05,2020
 # vcom -reportprogress 300 -93 -work work S:/VHDL Projects/Project_A/KS_ADDER.vhd 
 # -- Loading package STANDARD
 # -- Compiling entity KS_ADDER
 # -- Compiling architecture calc of KS_ADDER
-# End time: 13:41:34 on Dec 05,2020, Elapsed time: 0:00:00
+# End time: 14:10:09 on Dec 05,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {S:/VHDL Projects/Project_A/ones_complement.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:41:34 on Dec 05,2020
+# Start time: 14:10:09 on Dec 05,2020
 # vcom -reportprogress 300 -93 -work work S:/VHDL Projects/Project_A/ones_complement.vhd 
 # -- Loading package STANDARD
 # -- Compiling entity ones_complement
 # -- Compiling architecture struct of ones_complement
-# End time: 13:41:34 on Dec 05,2020, Elapsed time: 0:00:00
+# End time: 14:10:09 on Dec 05,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {S:/VHDL Projects/Project_A/and_2.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:41:34 on Dec 05,2020
+# Start time: 14:10:09 on Dec 05,2020
 # vcom -reportprogress 300 -93 -work work S:/VHDL Projects/Project_A/and_2.vhd 
 # -- Loading package STANDARD
 # -- Compiling entity AND_2
 # -- Compiling architecture struct of AND_2
-# End time: 13:41:34 on Dec 05,2020, Elapsed time: 0:00:00
+# End time: 14:10:09 on Dec 05,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {S:/VHDL Projects/Project_A/or_2.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:41:34 on Dec 05,2020
+# Start time: 14:10:09 on Dec 05,2020
 # vcom -reportprogress 300 -93 -work work S:/VHDL Projects/Project_A/or_2.vhd 
 # -- Loading package STANDARD
 # -- Compiling entity OR_2
 # -- Compiling architecture struct of OR_2
-# End time: 13:41:35 on Dec 05,2020, Elapsed time: 0:00:01
+# End time: 14:10:09 on Dec 05,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {S:/VHDL Projects/Project_A/subtractor.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:41:35 on Dec 05,2020
+# Start time: 14:10:09 on Dec 05,2020
 # vcom -reportprogress 300 -93 -work work S:/VHDL Projects/Project_A/subtractor.vhd 
 # -- Loading package STANDARD
 # -- Compiling entity subtractor
 # -- Compiling architecture calc of subtractor
-# End time: 13:41:35 on Dec 05,2020, Elapsed time: 0:00:00
+# End time: 14:10:10 on Dec 05,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {S:/VHDL Projects/Project_A/nand1.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:41:35 on Dec 05,2020
+# Start time: 14:10:10 on Dec 05,2020
 # vcom -reportprogress 300 -93 -work work S:/VHDL Projects/Project_A/nand1.vhd 
 # -- Loading package STANDARD
 # -- Compiling entity NAND1
 # -- Compiling architecture plan of NAND1
-# End time: 13:41:35 on Dec 05,2020, Elapsed time: 0:00:00
+# End time: 14:10:10 on Dec 05,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vcom -93 -work work {S:/VHDL Projects/Project_A/Testbench.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:41:35 on Dec 05,2020
+# Start time: 14:10:10 on Dec 05,2020
 # vcom -reportprogress 300 -93 -work work S:/VHDL Projects/Project_A/Testbench.vhd 
 # -- Loading package STANDARD
 # -- Compiling entity Testbench
 # -- Compiling architecture tb of Testbench
-# End time: 13:41:35 on Dec 05,2020, Elapsed time: 0:00:00
+# End time: 14:10:10 on Dec 05,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L maxv -L rtl_work -L work -voptargs="+acc"  Testbench
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L maxv -L rtl_work -L work -voptargs=""+acc"" Testbench 
-# Start time: 13:41:36 on Dec 05,2020
+# Start time: 14:10:10 on Dec 05,2020
 # Loading std.standard
 # Loading work.testbench(tb)
 # Loading work.alu(structure)
@@ -144,6 +144,6 @@
 # .main_pane.objects.interior.cs.body.tree
 # run -all
 # Break key hit
-# Simulation stop requested.
-# End time: 13:54:37 on Dec 05,2020, Elapsed time: 0:13:01
+# Break in Architecture struct at S:/VHDL Projects/Project_A/and_2.vhd line 12
+# End time: 14:14:36 on Dec 05,2020, Elapsed time: 0:04:26
 # Errors: 0, Warnings: 0

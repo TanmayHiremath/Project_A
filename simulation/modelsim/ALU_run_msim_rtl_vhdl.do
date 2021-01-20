@@ -30,7 +30,6 @@ vcom -93 -work work {S:/VHDL Projects/Project_A/ones_complement.vhd}
 vcom -93 -work work {S:/VHDL Projects/Project_A/and_2.vhd}
 vcom -93 -work work {S:/VHDL Projects/Project_A/or_2.vhd}
 vcom -93 -work work {S:/VHDL Projects/Project_A/subtractor.vhd}
-vcom -93 -work work {S:/VHDL Projects/Project_A/twos_complement.vhd}
 vcom -93 -work work {S:/VHDL Projects/Project_A/nand1.vhd}
 
 vcom -93 -work work {S:/VHDL Projects/Project_A/Testbench.vhd}
